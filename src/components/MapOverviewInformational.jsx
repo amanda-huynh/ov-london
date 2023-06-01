@@ -13,140 +13,94 @@ import CommentSection from "./CommentSection";
 import "./MapOverviewInformational.css";
 
 const center = {
-  lat: 37.42823,
-  lng: -122.168861,
+  lat: 51.515682,
+  lng: -0.070532,
+};
+
+const options = {
+  // disableDefaultUI: true,
+  // clickableIcons: false,
 };
 
 const markers = [
   {
     id: 1,
-    name: "Stanford's Echo Circle / Whisper Garden",
-    image: "/gems-issues/gem-stanford-whisper-garden.png",
+    name: "1",
+    image: "/gems-issues/ZS_Photo1.jpeg",
     contexts: [
-      {
-        context: `Small garden surrounded by trees with a concrete circular area in the middle. Surrounding this circle are benches where people can sit. In the middle of the circle is the following quote forming a ring.`,
-        createdAt: Date.now().toString(),
-      },
-      {
-        context: `
-      For the troubled, may you find peace.
-      For the despairing, may you find hope.
-      For the lonely, may you find love.
-      For the skeptical, may you find faith.
-      – Frances C. Arrillaga`,
-        createdAt: Date.now().toString(),
-      },
-      {
-        context: `If you were to stand in the middle and speak out loud, you can hear your voice speaking back to you. I was told about this place by a senior when I was still a frosh, and it acts as a secret that is passed on from old students to new students.`,
-        createdAt: Date.now().toString(),
-      },
+        {
+          context:
+            "This was training. [Test Image]",
+          createdAt: Date.now().toString(),
+        },
     ],
-    type: "hidden gem",
-    position: { lat: 37.4270301, lng: -122.1705974 },
+    type: "gem",
+    position: { lat: 51.517070, lng: -0.071350 },
   },
   {
     id: 2,
-    name: "Branner Earth Sciences Library ",
-    image: "/gems-issues/gem-branner-earthsys-library.png",
+    name: "2",
+    image: "gems-issues/ZS_Photo2.jpeg",
     contexts: [
-      { context: "Good study spot.", createdAt: Date.now().toString() },
+      {
+        context:
+          "Yeah, in this place, because people- they are using drugs, smoking, like drinking cans..like cans and stuff. It’s, like, not good.",
+        createdAt: Date.now().toString(),
+      },
     ],
-    type: "hidden gem",
-    position: { lat: 37.426378, lng: -122.172588 },
+    type: "concern",
+    position: { lat: 51.517237, lng: -0.071472 },
   },
   {
     id: 3,
-    name: "EVGR Dining Upstairs",
-    image: "/gems-issues/gem-evgr-dining.png",
-    contexts: [{ context: "Spacious area.", createdAt: Date.now().toString() }],
-    type: "hidden gem",
-    position: { lat: 37.4266303, lng: -122.1575556 },
+    name: "3",
+    image: "/gems-issues/ZS_Photo3.jpeg",
+    contexts: [
+      {
+        context:
+          "Because in this place, the drug dealers [are] coming, they [are] selling drugs. We need to do something about that.",
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.517687, lng: -0.071511 },
   },
   {
     id: 4,
-    name: "Durand Building",
-    image: "/gems-issues/concern-durand-building.png",
+    name: "4",
+    image: "/gems-issues/ZS_Photo4.jpeg",
     contexts: [
       {
-        context: "The Durand offices are unsettling.",
+        context:
+          `[This is] the day center, and after like three o'clock I'm leaving, this area, basically.
+          It's good here, when you're coming. You can, like, do your skills and stuff, training.
+          That's why I'm coming here all the time. I want to be a person, not to do nothing,
+          basically. Yeah. Dellow is a good place as well.`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "concern",
-    position: { lat: 37.4268622, lng: -122.1729303 },
+    type: "gem",
+    position: { lat: 51.517612, lng: -0.071642 },
   },
   {
     id: 5,
-    name: "Old Union",
-    image: "",
-    contexts: [
-      { context: "Cozy area to hang out.", createdAt: Date.now().toString() },
-    ],
-    type: "hidden gem",
-    position: { lat: 37.4250759, lng: -122.1699013 },
-  },
-  {
-    id: 7,
-    name: "The balcony of the English/creative writing building ",
-    image: "",
-    contexts: [
-      { context: "Cool hidden spot!", createdAt: Date.now().toString() },
-    ],
-    type: "hidden gem",
-    position: { lat: 37.42862, lng: -122.1704363 },
-  },
-  {
-    id: 8,
-    name: "The fourth floor of the math corner building",
-    image: null,
-    contexts: [
-      { context: "Cozy area to hang out.", createdAt: Date.now().toString() },
-    ],
-    type: "hidden gem",
-    position: { lat: 37.4289836, lng: -122.1715016 },
-  },
-  {
-    id: 9,
-    name: "Terrace of the A3C.",
-    image: "/gems-issues/gem-a3c-clubhouse.png",
+    name: "5",
+    image: "/gems-issues/ZS_Photo5.jpeg",
     contexts: [
       {
         context:
-          "At the end of last year, we added tables, chairs, couches, and plants outside and made it cozier.",
+          `This is, like, Founder’s House. I was living, like, in this place in cold weather like
+          for homeless people and basically displaced from Salvation Army. Yeah. So they
+          provide housing and benefits as well to get, some, they [are] doing like training as
+          well.`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "hidden gem",
-    position: { lat: 37.4250361, lng: -122.1697083 },
-  },
-  {
-    id: 10,
-    name: "First floor of the Huang building",
-    image: "/gems-issues/gem-huang-first-floor.png",
-    contexts: [
-      {
-        context:
-          "Open and quiet study area away from crowds of the Huang basement",
-        createdAt: Date.now().toString(),
-      },
-    ],
-    type: "hidden gem",
-    position: { lat: 37.42835568591731, lng: -122.1741828 },
-  },
-  {
-    id: 11,
-    name: "Intersection on Jane Stanford Way & Lomita Mall",
-    image: "/gems-issues/concern-jane-lomita-isect.png",
-    contexts: [
-      {
-        context: "Lots of bike accidents here.",
-        createdAt: Date.now().toString(),
-      },
-    ],
-    type: "concern",
-    position: { lat: 37.4291732, lng: -122.1714532 },
+    type: "gem",
+    position: { lat: 51.517588, lng: -0.068986 },
   },
 ];
+
 
 function updateMarkers(id, newContext) {
   markers.forEach((value) => {
@@ -160,7 +114,7 @@ function updateMarkers(id, newContext) {
 function MapOverviewInformational() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyA33ngdOfund3OFvbrbIuRcwBouzJiEabY",
+    googleMapsApiKey: "AIzaSyBSsG1wNVBdEK0DIThaMk9GhrKm3wk4e58",
   });
   const [map, setMap] = useState(null);
   const [activeMarker, setActiveMarker] = useState(null);
@@ -198,8 +152,10 @@ function MapOverviewInformational() {
         let mapMarker = new window.google.maps.Marker({
           position: position,
           map: map,
+          title: marker.name,
+          label: marker.name,
           icon:
-            marker.type === "hidden gem"
+            marker.type === "gem"
               ? {
                   url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
                   scaledSize: new window.google.maps.Size(55, 55), // in pixels
@@ -212,7 +168,7 @@ function MapOverviewInformational() {
         mapMarker.addListener("click", function onMarkerClick() {
           mapInfowindow.setContent(
             `<div class="infoWindow">
-            <h2>${marker.name}</h2>
+            <h2>Walk Photo ${marker.name}</h2>
             ${
               marker.image
                 ? `<img class="imageWindow" src="${
@@ -262,6 +218,7 @@ function MapOverviewInformational() {
         mapContainerClassName="mapContainer"
         center={center}
         zoom={16}
+        options={options}
         onClick={() => setActiveMarker(null)}
         onLoad={onLoad}
         onUnmount={onUnmount}
