@@ -186,7 +186,7 @@ function MapOverviewInformational() {
 
           streetViewInfowindow.setContent(
             `<div class="infoWindow">
-          <h2>${marker.name}</h2>
+          <h2>Walk Photo ${marker.name}</h2>
           ${
             marker.image
               ? `<img class="imageWindow" src="${
