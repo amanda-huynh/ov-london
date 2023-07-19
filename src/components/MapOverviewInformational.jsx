@@ -9,6 +9,7 @@ import {
   Polyline,
   Marker,
 } from "@react-google-maps/api";
+import Main from "./Main.jsx"; 
 import CommentSection from "./CommentSection";
 import "./MapOverviewInformational.css";
 
@@ -232,6 +233,8 @@ function MapOverviewInformational() {
           userId={userId}
         />
       ) : null}
+      {/* <br/>
+      <Main className="MainContainer"/> */}
     </div>
   ) : (
     <div>Loading Map...</div>
