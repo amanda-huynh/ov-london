@@ -27,7 +27,7 @@ const markers = [
   {
     id: 1,
     name: "1",
-    image: "/gems-issues/ZS_Photo1.jpeg",
+    image: "/gems-issues/ZS07_Photo1.jpeg",
     contexts: [
         {
           context:
@@ -41,7 +41,7 @@ const markers = [
   {
     id: 2,
     name: "2",
-    image: "gems-issues/ZS_Photo2.jpeg",
+    image: "gems-issues/ZS07_Photo2.jpeg",
     contexts: [
       {
         context:
@@ -55,7 +55,7 @@ const markers = [
   {
     id: 3,
     name: "3",
-    image: "/gems-issues/ZS_Photo3.jpeg",
+    image: "/gems-issues/ZS07_Photo3.jpeg",
     contexts: [
       {
         context:
@@ -69,7 +69,7 @@ const markers = [
   {
     id: 4,
     name: "4",
-    image: "/gems-issues/ZS_Photo4.jpeg",
+    image: "/gems-issues/ZS07_Photo4.jpeg",
     contexts: [
       {
         context:
@@ -86,7 +86,7 @@ const markers = [
   {
     id: 5,
     name: "5",
-    image: "/gems-issues/ZS_Photo5.jpeg",
+    image: "/gems-issues/ZS07_Photo5.jpeg",
     contexts: [
       {
         context:
