@@ -16,8 +16,10 @@ function CommentSection(props) {
       createdAt: Date.now().toString(),
     };
     // props.setContexts([...props.contexts, newComment])
-    console.log(props.contexts);
-    props.updateMarkers(props.userId, newContext);
+    console.log("props.contexts in CommentSection", props.contexts);
+    // props.updateMarkers(props.userId, newContext);
+    console.log("props.markers, etc", props.markers, props.userId, newContext);
+    props.updateMarkers(props.markers, props.userId, newContext);
     props.setContexts([...props.contexts]);
   }
 
