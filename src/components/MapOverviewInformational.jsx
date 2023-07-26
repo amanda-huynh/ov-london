@@ -9,7 +9,7 @@ import {
   Polyline,
   Marker,
 } from "@react-google-maps/api";
-import Main from "./Main.jsx"; 
+import Main from "./ImageGallery.jsx"; 
 import CommentSection from "./CommentSection";
 import "./MapOverviewInformational.css";
 

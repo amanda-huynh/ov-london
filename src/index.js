@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Navbar,
-  MapOverviewInformational,
+  // MapOverviewInformational,
   Main,
   GenericMap,
 } from "./components";
@@ -1021,16 +1021,16 @@ root.render(
   <Router>
     <Navbar tabindex="1"/>
     <Routes>
-      <Route tabindex="2" path="/" element={<Main />} />
-      <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} />
-      <Route tabindex="4" path="/AB11_Walk" element={<GenericMap markers={AB11_Markers} />} />
-      <Route tabindex="5" path="/AN10_Walk" element={<GenericMap markers={AN10_Markers} />} />
-      <Route tabindex="6" path="/CK09_Walk" element={<GenericMap markers={CK09_Markers} />} />
-      <Route tabindex="7" path="/DM12_Walk" element={<GenericMap markers={DM12_Markers} />} />
-      <Route tabindex="8" path="/SJ13_Walk" element={<GenericMap markers={SJ13_Markers} />} />
-      <Route tabindex="9" path="/TM08_Walk" element={<GenericMap markers={TM08_Markers} />} />
-      <Route tabindex="10" path="/ZS07_Walk" element={<GenericMap markers={ZS07_Markers} />} />
-      <Route tabindex="11" path="/allMarkers" element={<GenericMap markers={allMarkers} />} />
+      {/* <Route tabindex="2" path="/" element={<Main />} /> */}
+      {/* <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
+      <Route tabindex="3" path="/AB11_Walk" element={<GenericMap markers={AB11_Markers} />} />
+      <Route tabindex="4" path="/AN10_Walk" element={<GenericMap markers={AN10_Markers} />} />
+      <Route tabindex="5" path="/CK09_Walk" element={<GenericMap markers={CK09_Markers} />} />
+      <Route tabindex="6" path="/DM12_Walk" element={<GenericMap markers={DM12_Markers} />} />
+      <Route tabindex="7" path="/SJ13_Walk" element={<GenericMap markers={SJ13_Markers} />} />
+      <Route tabindex="8" path="/TM08_Walk" element={<GenericMap markers={TM08_Markers} />} />
+      <Route tabindex="9" path="/ZS07_Walk" element={<GenericMap markers={ZS07_Markers} />} />
+      <Route tabindex="10" path="/allMarkers" element={<GenericMap markers={allMarkers} />} />
     </Routes>
   </Router>
 );

@@ -8,6 +8,8 @@ import {
   Marker,
 } from "@react-google-maps/api";
 import CommentSection from "./CommentSection";
+import Main from "./ImageGallery";
+import ImageGallery from "./ImageGallery";
 
 function updateMarkers(markers, id, newContext) {
   console.log("everything", markers, id, newContext);
@@ -131,7 +133,7 @@ const GenericMap = ({ markers }) => {
   }, []);
 
   return isLoaded ? (
-    <div className="container">
+    <div className="container" style={{display: 'flex', flexDirection: 'column'}}>
       <GoogleMap
         mapContainerClassName="mapContainer"
         center={center}
@@ -176,6 +178,7 @@ const GenericMap = ({ markers }) => {
           userId={userId}
         />
       ) : null}
+      <ImageGallery markers={markers} />
     </div>
   ) : (
     <div>Loading Map...</div>
