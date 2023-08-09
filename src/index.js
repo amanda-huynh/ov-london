@@ -45,7 +45,7 @@ const AB11_Markers = [
     id: 3,
     name: "3",
     image: "/gems-issues/AB11_Photo3.jpeg",
-    contexts: [
+    contexs: [
         {
           context:
             `The sign says, 'Are you causing a nuisance or behaving antisocially? You could be given a fine.' Lose your
@@ -1019,18 +1019,18 @@ const allMarkers = [...AB11_Markers, ...CK09_Markers, ...DM12_Markers, ...SJ13_M
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Navbar tabindex="1"/>
+    <Navbar tabIndex="1"/>
     <Routes>
-      {/* <Route tabindex="2" path="/" element={<Main />} /> */}
-      {/* <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
-      <Route tabindex="3" path="/AB11_Walk" element={<GenericMap markers={AB11_Markers} />} />
-      <Route tabindex="4" path="/AN10_Walk" element={<GenericMap markers={AN10_Markers} />} />
-      <Route tabindex="5" path="/CK09_Walk" element={<GenericMap markers={CK09_Markers} />} />
-      <Route tabindex="6" path="/DM12_Walk" element={<GenericMap markers={DM12_Markers} />} />
-      <Route tabindex="7" path="/SJ13_Walk" element={<GenericMap markers={SJ13_Markers} />} />
-      <Route tabindex="8" path="/TM08_Walk" element={<GenericMap markers={TM08_Markers} />} />
-      <Route tabindex="9" path="/ZS07_Walk" element={<GenericMap markers={ZS07_Markers} />} />
-      <Route tabindex="10" path="/allMarkers" element={<GenericMap markers={allMarkers} />} />
+      {/* <Route tabIndex="2" path="/" element={<Main />} /> */}
+      {/* <Route tabIndex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
+      <Route tabIndex="2" path="/AB11_Walk" element={<GenericMap key="AB11" isAllMarkers={false} markers={AB11_Markers} />} />
+      <Route tabIndex="3" path="/AN10_Walk" element={<GenericMap key="AN10" isAllMarkers={false} markers={AN10_Markers} />} />
+      <Route tabIndex="4" path="/CK09_Walk" element={<GenericMap key="CK09" isAllMarkers={false} markers={CK09_Markers} />} />
+      <Route tabIndex="5" path="/DM12_Walk" element={<GenericMap key="DM12" isAllMarkers={false} markers={DM12_Markers} />} />
+      <Route tabIndex="6" path="/SJ13_Walk" element={<GenericMap key="SJ13" isAllMarkers={false} markers={SJ13_Markers} />} />
+      <Route tabIndex="7" path="/TM08_Walk" element={<GenericMap key="TM08" isAllMarkers={false} markers={TM08_Markers} />} />
+      <Route tabIndex="8" path="/ZS07_Walk" element={<GenericMap key="ZS07" isAllMarkers={false} markers={ZS07_Markers} />} />
+      <Route tabIndex="9" path="/allMarkers" element={<GenericMap key="allMarkers" isAllMarkers={true} markers={allMarkers} />} />
     </Routes>
   </Router>
 );

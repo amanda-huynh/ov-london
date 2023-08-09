@@ -22,7 +22,7 @@ function updateMarkers(markers, id, newContext) {
   });
 }
 
-const GenericMap = ({ markers }) => {
+const GenericMap = ({ markers, isAllMarkers=false }) => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyBSsG1wNVBdEK0DIThaMk9GhrKm3wk4e58",
@@ -69,22 +69,28 @@ const GenericMap = ({ markers }) => {
         let streetViewInfowindow = new window.google.maps.InfoWindow({
           pixelOffset: new window.google.maps.Size(0, -48),
         });
-        let mapMarker = new window.google.maps.Marker({
+        let markerOptions = {
           position: position,
           map: map,
-          title: marker.name,
-          label: marker.name,
           icon:
-            marker.type === "gem"
-              ? {
-                  url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-                  scaledSize: new window.google.maps.Size(55, 55), // in pixels
-                }
-              : {
-                  url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-                  scaledSize: new window.google.maps.Size(55, 55),
-                },
-        });
+              marker.type === "gem"
+                  ? {
+                      url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+                      scaledSize: new window.google.maps.Size(55, 55),
+                  }
+                  : {
+                      url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                      scaledSize: new window.google.maps.Size(55, 55),
+                  },
+      };
+
+      if (!isAllMarkers) {
+          markerOptions.title = marker.name;
+          markerOptions.label = marker.name;
+      }
+
+      let mapMarker = new window.google.maps.Marker(markerOptions);
+
         mapMarker.addListener("click", function onMarkerClick() {
           mapInfowindow.setContent(
             `<div class="infoWindow">
@@ -143,37 +149,18 @@ const GenericMap = ({ markers }) => {
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
-        <Polyline
-          path={markers.map((marker) => marker.position)}
-          options={{ strokeColor: "blue", strokeOpacity: 1.0, strokeWeight: 4 }}
-        />
-        {/* {markers.map((marker) => (
-          <Marker
-            key={marker.id}
-            position={marker.position}
-            onClick={() => handleActiveMarker(marker)}
-            icon={
-              marker.type === "gem"
-                ? {
-                    url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-                    scaledSize: new window.google.maps.Size(55, 55), // in pixels
-                  }
-                : {
-                    url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-                    scaledSize: new window.google.maps.Size(55, 55),
-                  }
-            }
+        {!isAllMarkers && (
+          <Polyline
+            path={markers.map((marker) => marker.position)}
+            options={{ strokeColor: "blue", strokeOpacity: 1.0, strokeWeight: 5 }}
           />
-        ))} */}
+        )}
       </GoogleMap>
       {commentActive ? (
         <CommentSection
           contexts={contexts}
           setContexts={setContexts}
           updateMarkers={updateMarkers}
-          // updateMarkers={(id, newContext) =>
-          //   updateMarkers(markers, id, newContext)
-          // }
           markers={markers}
           userId={userId}
         />
