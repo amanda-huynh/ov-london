@@ -1,21 +1,9 @@
-.commentSectionContainer {
-  /* width: 40vh; */
-  width: 20%;
-  height: 90vh;
-  padding: 10px;
-  overflow-y: auto;
-  /* display: flex; */
-  justify-content: center;
-  z-index: 1;
-  font-size: "30px";
-  border: 3px solid #000000;
-  /* position: "absolute"; */
-}
 
 .commentSectionContainer {
   position: absolute;  
   right: 0;   
   width: 20%; 
+  margin-top: 80px;
   height: 90vh;
   padding: 10px;
   overflow-y: auto;

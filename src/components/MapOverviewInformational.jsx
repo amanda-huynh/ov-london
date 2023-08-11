@@ -233,8 +233,6 @@ function MapOverviewInformational() {
           userId={userId}
         />
       ) : null}
-      {/* <br/>
-      <Main className="MainContainer"/> */}
     </div>
   ) : (
     <div>Loading Map...</div>

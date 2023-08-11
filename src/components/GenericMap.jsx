@@ -8,7 +8,6 @@ import {
   Marker,
 } from "@react-google-maps/api";
 import CommentSection from "./CommentSection";
-import Main from "./ImageGallery";
 import ImageGallery from "./ImageGallery";
 
 function updateMarkers(markers, id, newContext) {
@@ -22,7 +21,7 @@ function updateMarkers(markers, id, newContext) {
   });
 }
 
-const GenericMap = ({ markers, isAllMarkers=false }) => {
+const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyBSsG1wNVBdEK0DIThaMk9GhrKm3wk4e58",
@@ -92,11 +91,13 @@ const GenericMap = ({ markers, isAllMarkers=false }) => {
         }
 
         let mapMarker = new window.google.maps.Marker(markerOptions);
+        
+        const markerSource = marker.source || mapName;
 
         mapMarker.addListener("click", function onMarkerClick() {
           mapInfowindow.setContent(
             `<div class="infoWindow">
-            <h2>Walk Photo ${marker.name}</h2>
+            <h2>${markerSource} Photo ${marker.name}</h2>
             ${
               marker.image
                 ? `<img class="imageWindow" src="${
@@ -142,6 +143,7 @@ const GenericMap = ({ markers, isAllMarkers=false }) => {
 
   return isLoaded ? (
     <div className="container" style={{display: 'flex', flexDirection: 'column'}}>
+      <h1>{mapName}</h1>
       <GoogleMap
         mapContainerClassName="mapContainer"
         center={center}
@@ -163,13 +165,16 @@ const GenericMap = ({ markers, isAllMarkers=false }) => {
           contexts={contexts}
           setContexts={setContexts}
           updateMarkers={updateMarkers}
-          // updateMarkers={(id, newContext) =>
-          //   updateMarkers(markers, id, newContext)
-          // }
           markers={markers}
           userId={userId}
         />
-      ) : null}
+      ) : <CommentSection
+      contexts={contexts}
+      setContexts={setContexts}
+      updateMarkers={updateMarkers}
+      markers={markers}
+      userId={userId}
+    />}
       <ImageGallery markers={markers} />
     </div>
   ) : (

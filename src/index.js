@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Navbar,
   // MapOverviewInformational,
-  Main,
+  ImageGallery,
   GenericMap,
 } from "./components";
 import "./index.css";
@@ -508,7 +508,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 1,
     name: "1",
-    image: "/gems-issues/DRESETMarch27_1_Photo0.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_Photo0.jpg",
     contexts: [
         {
           context:
@@ -522,7 +522,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 2,
     name: "2",
-    image: "/gems-issues/DRESETMarch27_1_Photo1.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo1.jpg",
     contexts: [
         {
           context:
@@ -536,7 +536,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 3,
     name: "3",
-    image: "/gems-issues/DRESETMarch27_1_Photo2.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo2.jpg",
     contexts: [
         {
           context:
@@ -550,7 +550,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 4,
     name: "4",
-    image: "/gems-issues/DRESETMarch27_1_Photo3.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo3.jpg",
     contexts: [
       {
         context:
@@ -564,7 +564,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 5,
     name: "5",
-    image: "/gems-issues/DRESETMarch27_1_Photo4.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo4.jpg",
     contexts: [
       {
         context:
@@ -578,7 +578,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 6,
     name: "6",
-    image: "/gems-issues/DRESETMarch27_1_Photo5.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo5.jpg",
     contexts: [
       {
         context:
@@ -592,7 +592,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 7,
     name: "7",
-    image: "/gems-issues/DRESETMarch27_1_Photo6.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo6.jpg",
     contexts: [
       {
         context:
@@ -606,7 +606,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 8,
     name: "8",
-    image: "/gems-issues/DRESETMarch27_1_Photo7.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo7.jpg",
     contexts: [
       {
         context:
@@ -620,7 +620,7 @@ const DRESETMarch27_1_Markers = [
   {
     id: 9,
     name: "9",
-    image: "/gems-issues/DRESETMarch27_1_Photo8.jpeg",
+    image: "/gems-issues/DRESETMarch27_1_photo8.jpg",
     contexts: [
       {
         context:
@@ -637,7 +637,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 1,
     name: "1",
-    image: "/gems-issues/DRESETMarch27_2_Photo0.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo0.jpg",
     contexts: [
         {
           context:
@@ -651,7 +651,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 2,
     name: "2",
-    image: "/gems-issues/DRESETMarch27_2_Photo1.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo1.jpg",
     contexts: [
         {
           context:
@@ -665,7 +665,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 3,
     name: "3",
-    image: "/gems-issues/DRESETMarch27_2_Photo2.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo2.jpg",
     contexts: [
         {
           context:
@@ -679,7 +679,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 4,
     name: "4",
-    image: "/gems-issues/DRESETMarch27_2_Photo3.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo3.jpg",
     contexts: [
       {
         context:
@@ -693,7 +693,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 5,
     name: "5",
-    image: "/gems-issues/DRESETMarch27_2_Photo4.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo4.jpg",
     contexts: [
       {
         context:
@@ -707,7 +707,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 6,
     name: "6",
-    image: "/gems-issues/DRESETMarch27_2_Photo5.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo5.jpg",
     contexts: [
       {
         context:
@@ -721,7 +721,7 @@ const DRESETMarch27_2_Markers = [
   {
     id: 7,
     name: "7",
-    image: "/gems-issues/DRESETMarch27_2_Photo6.jpeg",
+    image: "/gems-issues/DRESETMarch27_2_photo6.jpg",
     contexts: [
       {
         context:
@@ -1244,25 +1244,37 @@ const ZS07_Markers = [
   },
 ];
 
-const allMarkers = [...AB11_Markers, ...CK09_Markers, ...DM12_Markers, ...DRESETMarch27_1_Markers, ...DRESETMarch27_2_Markers, ...SJ13_Markers, ...TM08_Markers, ...ZS07_Markers];
+const tagWithSource = (source, markers) => 
+    markers.map(marker => ({ ...marker, source }));
+
+const allMarkers = [
+    ...tagWithSource("AB11", AB11_Markers),
+    ...tagWithSource("CK09", CK09_Markers),
+    ...tagWithSource("DM12", DM12_Markers),
+    ...tagWithSource("DRESET March 27 (1)", DRESETMarch27_1_Markers),
+    ...tagWithSource("DRESET March 27 (2)", DRESETMarch27_2_Markers),
+    ...tagWithSource("SJ13", SJ13_Markers),
+    ...tagWithSource("TM08", TM08_Markers),
+    ...tagWithSource("ZS07", ZS07_Markers)
+];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Navbar tabIndex="1"/>
     <Routes>
-      {/* <Route tabindex="2" path="/" element={<Main />} /> */}
+      <Route tabindex="2" path="/" element={<ImageGallery markers={allMarkers} />} />
       {/* <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
-      <Route tabIndex="3" path="/AB11_Walk" element={<GenericMap key="AB11" isAllMarkers={false} markers={AB11_Markers} />} />
-      <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" isAllMarkers={false} markers={AN10_Markers} />} />
-      <Route tabIndex="5" path="/CK09_Walk" element={<GenericMap key="CK09" isAllMarkers={false} markers={CK09_Markers} />} />
-      <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" isAllMarkers={false} markers={DM12_Markers} />} />
-      <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
-      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
-      <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" isAllMarkers={false} markers={SJ13_Markers} />} />
-      <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" isAllMarkers={false} markers={TM08_Markers} />} />
-      <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" isAllMarkers={false} markers={ZS07_Markers} />} />
-      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" isAllMarkers={true} markers={allMarkers} />} />
+      <Route tabIndex="3" path="/AB11_Walk" element={<GenericMap key="AB11" mapName="AB11 Walk" isAllMarkers={false} markers={AB11_Markers} />} />
+      <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" mapName="AN10 Walk"  isAllMarkers={false} markers={AN10_Markers} />} />
+      <Route tabIndex="5" path="/CK09_Walk" element={<GenericMap key="CK09" mapName="CK09 Walk" isAllMarkers={false} markers={CK09_Markers} />} />
+      <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" mapName="DM12 Walk" isAllMarkers={false} markers={DM12_Markers} />} />
+      <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" mapName="DRESET March 27 (1) Walk" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
+      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
+      <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
+      <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
+      <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
+      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" mapName="All Walk" isAllMarkers={true} markers={allMarkers} />} />
     </Routes>
   </Router>
 );
