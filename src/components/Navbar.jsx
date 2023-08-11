@@ -11,34 +11,34 @@ const Navbar = () => {
 
             {/* Navigation Bar */}
             <ul>
-                <li tabindex="2">
+                <li tabIndex="2">
                     <Link to='/'>Main</Link>
                 </li>
                 {/* <li>
                     <Link to='/mapoverviewinformational'>Map Overview Informational</Link>
                 </li> */}
-                <li tabindex="3">
+                <li tabIndex="3">
                     <Link to='/AB11_Walk'>AB11 Walk</Link>
                 </li>
-                <li tabindex="4">
+                <li tabIndex="4">
                     <Link to='/AN10_Walk'>AN10 Walk</Link>
                 </li>
-                <li tabindex="5">
+                <li tabIndex="5">
                     <Link to='/CK09_Walk'>CK09 Walk</Link>
                 </li>
-                <li tabindex="6">
+                <li tabIndex="6">
                     <Link to='/DM12_Walk'>DM12 Walk</Link>
                 </li>
-                <li tabindex="7">
+                <li tabIndex="7">
                     <Link to='/SJ13_Walk'>SJ13 Walk</Link>
                 </li>
-                <li tabindex="8">
+                <li tabIndex="8">
                     <Link to='/TM08_Walk'>TM08 Walk</Link>
                 </li>
-                <li tabindex="9">
+                <li tabIndex="9">
                     <Link to='/ZS07_Walk'>ZS07 Walk</Link>
                 </li>
-                <li tabindex="10">
+                <li tabIndex="10">
                     <Link to='/allMarkers'>All Markers</Link>
                 </li>
             </ul>
