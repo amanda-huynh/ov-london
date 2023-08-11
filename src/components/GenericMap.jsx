@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import {
   GoogleMap,
   useJsApiLoader,
@@ -28,14 +28,28 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
   });
 
   const [map, setMap] = useState(null);
+  const [mapMarkers, setMapMarkers] = useState([]);
   const [activeMarker, setActiveMarker] = useState(null);
   const [commentActive, setCommentActive] = useState(false);
   const [showStreetView, setShowStreetView] = useState(false);
   const [contexts, setContexts] = useState([]);
   const [userId, setUserId] = useState(-1);
   const center = markers.length > 0 ? markers[0].position : null;
-
   const [selectedPosition, setSelectedPosition] = useState(center);
+
+  const initialFilters = {
+    AB11: false,
+    CK09: false,
+    DM12: false,
+    "DRESET March 27 (1)": false,
+    "DRESET March 27 (2)": false,
+    SJ13: false,
+    TM08: false,
+    ZS07: false,
+    all: true
+  };
+  
+  const [selectedFilters, setSelectedFilters] = useState(initialFilters);
 
 
   const options = {
@@ -55,6 +69,7 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
       setMap(map);
 
       let panorama = map.getStreetView();
+      const createdMarkers = [];
 
       function onCommentButtonClick(marker) {
         setUserId(marker.id);
@@ -63,6 +78,7 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
       }
 
       markers.forEach((marker) => {
+        const isMarkerVisible = selectedFilters[marker.source] || selectedFilters.all;
         let position = marker.position;
         let mapInfowindow = new window.google.maps.InfoWindow({
           pixelOffset: new window.google.maps.Size(0, -48),
@@ -75,6 +91,7 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
           map: map,
           title: marker.name,
           label: marker.name,
+          visible: isMarkerVisible,
           icon:
           marker.type === "gem"
           ? {
@@ -92,8 +109,13 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
           markerOptions.label = marker.name;
         }
 
+        markerOptions.opacity = (!isAllMarkers && selectedFilters[marker.source]) || selectedFilters.all ? 1 : 0.5;
+
         let mapMarker = new window.google.maps.Marker(markerOptions);
-        
+        mapMarker.source = marker.source || mapName;
+            
+        createdMarkers.push(mapMarker);
+    
         const markerSource = marker.source || mapName;
 
         mapMarker.addListener("click", function onMarkerClick() {
@@ -135,17 +157,91 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
           onCommentButtonClick(marker);
         });
       });
+      setMapMarkers(createdMarkers);
     },
-    [markers, center]
+    [markers, center, selectedFilters, isAllMarkers]
   );
 
   const onUnmount = useCallback(function callback(map) {
     setMap(null);
   }, []);
 
+  const handleCheckboxChange = (key) => {
+    setSelectedFilters(prev => ({ 
+      ...prev, 
+      [key]: !prev[key], 
+      all: Object.values(prev).every(v => v) && !prev[key] // if all were previously true and we're unchecking one
+    }));
+  };
+  
+  const handleSelectAll = () => {
+    const newValue = !selectedFilters.all;
+    setSelectedFilters({
+      ...initialFilters,
+      all: newValue
+    });
+  };
+
+
+  const handleClear = () => {
+    setSelectedFilters({
+        ...initialFilters,
+        all: true
+    });
+  };
+
+  
+  useEffect(() => {
+    if (selectedFilters.all) {
+        mapMarkers.forEach(mapMarker => {
+            mapMarker.setOpacity(1);
+        });
+    } else {
+        mapMarkers.forEach(mapMarker => {
+            if (selectedFilters[mapMarker.source]) {
+                // console.log('Setting opacity 1 for', mapMarker.source);
+                mapMarker.setOpacity(1);
+            } else {
+                // console.log('Setting opacity 0 for', mapMarker.source);
+                mapMarker.setOpacity(0);
+            }
+        });
+    }
+}, [selectedFilters, mapMarkers]);
+
   return isLoaded ? (
     <div className="container" style={{display: 'flex', flexDirection: 'column'}}>
       <h1>{mapName}</h1>
+      {/* {isAllMarkers && (
+        <div className="filter-container">
+          <h2 className="filter-label">Walk Filter:</h2>
+          <div className="filterCheckboxes" style={{display: 'flex', flexDirection: 'row', gap: '15px'}}>
+            {Object.entries(selectedFilters).map(([key, value]) => 
+                key !== "all" ? (
+                    <div key={key}>
+                        <input
+                            type="checkbox"
+                            checked={value}
+                            onChange={() => handleCheckboxChange(key)}
+                        />
+                        {`${key} Walk`}
+                    </div>
+                ) : (
+                    <div key="all">
+                        <input
+                            type="checkbox"
+                            checked={value}
+                            onChange={handleSelectAll}
+                        />
+                        {"Select All"}
+                    </div>
+                )
+            )}
+            <button className="clearButton" onClick={handleClear}>Clear</button>
+          </div>  
+        </div>  
+      )} */}
+
       <GoogleMap
         mapContainerClassName="mapContainer"
         // center={center}
@@ -163,6 +259,35 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
           />
         )}
       </GoogleMap>
+      {isAllMarkers && (
+        <div className="filter-container">
+          <h2 className="filter-label">Walk Filter:</h2>
+          <div className="filterCheckboxes" style={{display: 'flex', flexDirection: 'row', gap: '15px'}}>
+            {Object.entries(selectedFilters).map(([key, value]) => 
+                key !== "all" ? (
+                    <div key={key}>
+                        <input
+                            type="checkbox"
+                            checked={value}
+                            onChange={() => handleCheckboxChange(key)}
+                        />
+                        {`${key} Walk`}
+                    </div>
+                ) : (
+                    <div key="all">
+                        <input
+                            type="checkbox"
+                            checked={value}
+                            onChange={handleSelectAll}
+                        />
+                        {"Select All"}
+                    </div>
+                )
+            )}
+            <button className="clearButton" onClick={handleClear}>Clear</button>
+          </div>  
+        </div>  
+      )}
       {commentActive ? (
         <CommentSection
           contexts={contexts}
@@ -177,6 +302,7 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
       updateMarkers={updateMarkers}
       markers={markers}
       userId={userId}
+      isAllMarkers={isAllMarkers}
     />}
       {/* <ImageGallery markers={markers} markerSource={mapName} /> */}
       <ImageGallery markers={markers} markerSource={mapName} onImageClick={setSelectedPosition} />

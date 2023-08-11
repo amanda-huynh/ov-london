@@ -1261,9 +1261,9 @@ const allMarkers = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Navbar tabIndex="1"/>
+    <Navbar />
     <Routes>
-      <Route tabindex="2" path="/" element={<ImageGallery markers={allMarkers} />} />
+      <Route tabIndex="2" path="/" element={<ImageGallery markers={allMarkers} />} />
       {/* <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
       <Route tabIndex="3" path="/AB11_Walk" element={<GenericMap key="AB11" mapName="AB11 Walk" isAllMarkers={false} markers={AB11_Markers} />} />
       <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" mapName="AN10 Walk"  isAllMarkers={false} markers={AN10_Markers} />} />
@@ -1274,7 +1274,7 @@ root.render(
       <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
       <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
       <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
-      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" mapName="All Walk" isAllMarkers={true} markers={allMarkers} />} />
+      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" mapName="All Walk Data" isAllMarkers={true} markers={allMarkers} />} />
     </Routes>
   </Router>
 );

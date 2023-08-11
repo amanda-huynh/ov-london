@@ -32,19 +32,19 @@ const Navbar = () => {
                 <li tabIndex="7">
                     <Link to='/DRESETMarch27_1_Walk'>DRESET March 27 Walk 1 </Link>
                 </li>
-                <li tabIndex="7">
+                <li tabIndex="8">
                     <Link to='/DRESETMarch27_2_Walk'>DRESET March 27 Walk 2 </Link>
                 </li>
-                <li tabIndex="8">
+                <li tabIndex="9">
                     <Link to='/SJ13_Walk'>SJ13 Walk</Link>
                 </li>
-                <li tabIndex="9">
+                <li tabIndex="10">
                     <Link to='/TM08_Walk'>TM08 Walk</Link>
                 </li>
-                <li tabIndex="10">
+                <li tabIndex="11">
                     <Link to='/ZS07_Walk'>ZS07 Walk</Link>
                 </li>
-                <li tabIndex="11">
+                <li tabIndex="12">
                     <Link to='/allMarkers'>All Markers</Link>
                 </li>
             </ul>
