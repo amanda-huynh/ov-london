@@ -24,7 +24,5 @@ code {
 .photo {
   width: 300px;
   height: 300px;
-  margin: 5px;
-  /* margin: 7px; */
   /* object-fit: contain; */
 }

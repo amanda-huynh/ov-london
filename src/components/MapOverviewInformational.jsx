@@ -1,4 +1,6 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, memo } from "react";
+import ReactDOM from "react-dom/client";
+import ReactDOMServer from "react-dom/server";
 import {
   GoogleMap,
   useJsApiLoader,
@@ -7,14 +9,102 @@ import {
   Polyline,
   Marker,
 } from "@react-google-maps/api";
+import Main from "./ImageGallery.jsx"; 
 import CommentSection from "./CommentSection";
-import Main from "./ImageGallery";
-import ImageGallery from "./ImageGallery";
+import "./MapOverviewInformational.css";
 
-function updateMarkers(markers, id, newContext) {
-  console.log("everything", markers, id, newContext);
+const center = {
+  lat: 51.515682,
+  lng: -0.070532,
+};
+
+const options = {
+  // disableDefaultUI: true,
+  // clickableIcons: false,
+};
+
+const markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/ZS07_Photo1.jpeg",
+    contexts: [
+        {
+          context:
+            "This was training. [Test Image]",
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517070, lng: -0.071350 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "gems-issues/ZS07_Photo2.jpeg",
+    contexts: [
+      {
+        context:
+          "Yeah, in this place, because people- they are using drugs, smoking, like drinking cans..like cans and stuff. It’s, like, not good.",
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.517237, lng: -0.071472 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/ZS07_Photo3.jpeg",
+    contexts: [
+      {
+        context:
+          "Because in this place, the drug dealers [are] coming, they [are] selling drugs. We need to do something about that.",
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.517687, lng: -0.071511 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/ZS07_Photo4.jpeg",
+    contexts: [
+      {
+        context:
+          `[This is] the day center, and after like three o'clock I'm leaving, this area, basically.
+          It's good here, when you're coming. You can, like, do your skills and stuff, training.
+          That's why I'm coming here all the time. I want to be a person, not to do nothing,
+          basically. Yeah. Dellow is a good place as well.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517612, lng: -0.071642 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/ZS07_Photo5.jpeg",
+    contexts: [
+      {
+        context:
+          `This is, like, Founder’s House. I was living, like, in this place in cold weather like
+          for homeless people and basically displaced from Salvation Army. Yeah. So they
+          provide housing and benefits as well to get, some, they [are] doing like training as
+          well.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517588, lng: -0.068986 },
+  },
+];
+
+
+function updateMarkers(id, newContext) {
   markers.forEach((value) => {
-    console.log("value", value);
     if (value.id === id) {
       value.contexts.push(newContext);
       console.log("Updated value");
@@ -22,35 +112,26 @@ function updateMarkers(markers, id, newContext) {
   });
 }
 
-const GenericMap = ({ markers }) => {
+function MapOverviewInformational() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyBSsG1wNVBdEK0DIThaMk9GhrKm3wk4e58",
   });
-
   const [map, setMap] = useState(null);
   const [activeMarker, setActiveMarker] = useState(null);
   const [commentActive, setCommentActive] = useState(false);
   const [showStreetView, setShowStreetView] = useState(false);
   const [contexts, setContexts] = useState([]);
   const [userId, setUserId] = useState(-1);
-
-  const center = markers.length > 0 ? markers[0].position : null;
-
-  const options = {
-    // disableDefaultUI: true,
-    // clickableIcons: false,
-  };
-
   const handleActiveMarker = (marker) => {
     setActiveMarker(marker);
   };
-
   const onLoad = useCallback(
     function callback(map) {
       const bounds = new window.google.maps.LatLngBounds(center);
       markers.forEach(({ position }) => bounds.extend(position));
       map.fitBounds(bounds);
+
       setMap(map);
 
       let panorama = map.getStreetView();
@@ -125,7 +206,7 @@ const GenericMap = ({ markers }) => {
         });
       });
     },
-    [markers, center]
+    [markers]
   );
 
   const onUnmount = useCallback(function callback(map) {
@@ -133,7 +214,7 @@ const GenericMap = ({ markers }) => {
   }, []);
 
   return isLoaded ? (
-    <div className="container" style={{display: 'flex', flexDirection: 'column'}}>
+    <div className="container">
       <GoogleMap
         mapContainerClassName="mapContainer"
         center={center}
@@ -142,47 +223,21 @@ const GenericMap = ({ markers }) => {
         onClick={() => setActiveMarker(null)}
         onLoad={onLoad}
         onUnmount={onUnmount}
-      >
-        <Polyline
-          path={markers.map((marker) => marker.position)}
-          options={{ strokeColor: "blue", strokeOpacity: 1.0, strokeWeight: 4 }}
-        />
-        {/* {markers.map((marker) => (
-          <Marker
-            key={marker.id}
-            position={marker.position}
-            onClick={() => handleActiveMarker(marker)}
-            icon={
-              marker.type === "gem"
-                ? {
-                    url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-                    scaledSize: new window.google.maps.Size(55, 55), // in pixels
-                  }
-                : {
-                    url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-                    scaledSize: new window.google.maps.Size(55, 55),
-                  }
-            }
-          />
-        ))} */}
+      >      <Polyline path={markers.map((marker) => marker.position)} options={{ strokeColor: "blue", strokeOpacity: 1.0, strokeWeight: 4 }} />
       </GoogleMap>
       {commentActive ? (
         <CommentSection
           contexts={contexts}
           setContexts={setContexts}
           updateMarkers={updateMarkers}
-          // updateMarkers={(id, newContext) =>
-          //   updateMarkers(markers, id, newContext)
-          // }
-          markers={markers}
           userId={userId}
         />
       ) : null}
-      <ImageGallery markers={markers} />
+      {/* <br/>
+      <Main className="MainContainer"/> */}
     </div>
   ) : (
     <div>Loading Map...</div>
   );
-};
-
-export default GenericMap;
+}
+export default memo(MapOverviewInformational);

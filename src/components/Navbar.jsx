@@ -4,36 +4,41 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div className="navbar" tabIndex="1">
+        <div className="navbar" tabindex="1">
+            {/* <div>
+                <img src={SmallLogo} alt='Small Logo' />
+            </div> */}
+
+            {/* Navigation Bar */}
             <ul>
-                <li tabIndex="2">
+                <li tabindex="2">
                     <Link to='/'>Main</Link>
                 </li>
                 {/* <li>
                     <Link to='/mapoverviewinformational'>Map Overview Informational</Link>
                 </li> */}
-                <li tabIndex="3">
+                <li tabindex="3">
                     <Link to='/AB11_Walk'>AB11 Walk</Link>
                 </li>
-                <li tabIndex="4">
+                <li tabindex="4">
                     <Link to='/AN10_Walk'>AN10 Walk</Link>
                 </li>
-                <li tabIndex="5">
+                <li tabindex="5">
                     <Link to='/CK09_Walk'>CK09 Walk</Link>
                 </li>
-                <li tabIndex="6">
+                <li tabindex="6">
                     <Link to='/DM12_Walk'>DM12 Walk</Link>
                 </li>
-                <li tabIndex="7">
+                <li tabindex="7">
                     <Link to='/SJ13_Walk'>SJ13 Walk</Link>
                 </li>
-                <li tabIndex="8">
+                <li tabindex="8">
                     <Link to='/TM08_Walk'>TM08 Walk</Link>
                 </li>
-                <li tabIndex="9">
+                <li tabindex="9">
                     <Link to='/ZS07_Walk'>ZS07 Walk</Link>
                 </li>
-                <li tabIndex="10">
+                <li tabindex="10">
                     <Link to='/allMarkers'>All Markers</Link>
                 </li>
             </ul>
