@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div className="navbar" tabindex="1">
+        <div className="navbar" tabIndex="1">
             {/* <div>
                 <img src={SmallLogo} alt='Small Logo' />
             </div> */}
@@ -30,15 +30,21 @@ const Navbar = () => {
                     <Link to='/DM12_Walk'>DM12 Walk</Link>
                 </li>
                 <li tabIndex="7">
-                    <Link to='/SJ13_Walk'>SJ13 Walk</Link>
+                    <Link to='/DRESETMarch27_1_Walk'>DRESET March 27 Walk 1 </Link>
+                </li>
+                <li tabIndex="7">
+                    <Link to='/DRESETMarch27_2_Walk'>DRESET March 27 Walk 2 </Link>
                 </li>
                 <li tabIndex="8">
-                    <Link to='/TM08_Walk'>TM08 Walk</Link>
+                    <Link to='/SJ13_Walk'>SJ13 Walk</Link>
                 </li>
                 <li tabIndex="9">
-                    <Link to='/ZS07_Walk'>ZS07 Walk</Link>
+                    <Link to='/TM08_Walk'>TM08 Walk</Link>
                 </li>
                 <li tabIndex="10">
+                    <Link to='/ZS07_Walk'>ZS07 Walk</Link>
+                </li>
+                <li tabIndex="11">
                     <Link to='/allMarkers'>All Markers</Link>
                 </li>
             </ul>

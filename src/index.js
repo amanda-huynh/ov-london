@@ -504,6 +504,236 @@ const DM12_Markers = [
   },
 ];
 
+const DRESETMarch27_1_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETMarch27_1_Photo0.jpeg",
+    contexts: [
+        {
+          context:
+            `["And you record why" PF explains] Cuz they help people out, and they listen to ya.`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517235049924, lng: -0.071345157467269 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETMarch27_1_Photo1.jpeg",
+    contexts: [
+        {
+          context:
+            `It's where people come to drink, and they take drugs in there as well. So, it's not a good place. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "concern",
+    position: { lat: 51.516241085008, lng: -0.069388728265926 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETMarch27_1_Photo2.jpeg",
+    contexts: [
+        {
+          context:
+            `This shop's good for people to go and get cheap, like, domestic stuff and that for their houses. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517271326523, lng: -0.067045190413085 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETMarch27_1_Photo3.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where they come to pray at the mosque. Is that alright? [turns to PF]`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517499838767, lng: -0.065799517860066 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETMarch27_1_Photo4.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where some homeless people used to live, but they used to have drug and alcohol people in there as well. So, I'd say it's, it's not good. [PF: it's complicated?] Yeah. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.517972260374, lng: -0.064911252778942 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETMarch27_1_Photo5.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where, used to be a hospital, and now it's become a town hall. But they help a lot of people in there. [car noises from busy street].`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518805003619, lng: -0.060481451053717 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETMarch27_1_Photo6.jpeg",
+    contexts: [
+      {
+        context:
+          `This is the new hospital, Royal London. I've been here a few times, through drink [emphasis]. But it's a good place to be in where they help ya. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518871808531, lng: -0.059003683896392 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETMarch27_1_Photo7.jpeg",
+    contexts: [
+      {
+        context:
+          `[loud wind tunnel]. This is where homeless people come to have breakfast in the morning, and a cuppa coffee or tea. And to have a chat with whoever is on duty at that time. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.519281138772, lng: -0.057884194976009 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETMarch27_1_Photo8.jpeg",
+    contexts: [
+      {
+        context:
+          `He's one that sleeps under there. [loud wind tunnel] This is the library in White Chapel, where the homeless people go to sleep over night time. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.519332412437, lng: -0.057900527640049 },
+  },
+];
+
+const DRESETMarch27_2_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETMarch27_2_Photo0.jpeg",
+    contexts: [
+        {
+          context:
+            `["And you record why" PF explains] Cuz they help people out, and they listen to ya.`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.525580397946, lng: -0.032286689344803 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETMarch27_2_Photo1.jpeg",
+    contexts: [
+        {
+          context:
+            `It's where people come to drink, and they take drugs in there as well. So, it's not a good place. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.524261869653, lng: -0.030929766401857 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETMarch27_2_Photo2.jpeg",
+    contexts: [
+        {
+          context:
+            `This shop's good for people to go and get cheap, like, domestic stuff and that for their houses. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.524216479798, lng: -0.030935668347068 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETMarch27_2_Photo3.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where they come to pray at the mosque. Is that alright? [turns to PF]`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.523509432367, lng: -0.03015831198417 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETMarch27_2_Photo4.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where some homeless people used to live, but they used to have drug and alcohol people in there as well. So, I'd say it's, it's not good. [PF: it's complicated?] Yeah. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.52248348881, lng: -0.029610856415222 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETMarch27_2_Photo5.jpeg",
+    contexts: [
+      {
+        context:
+          `This is where, used to be a hospital, and now it's become a town hall. But they help a lot of people in there. [car noises from busy street].`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.522906009879, lng: -0.028550851053002 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETMarch27_2_Photo6.jpeg",
+    contexts: [
+      {
+        context:
+          `This is the new hospital, Royal London. I've been here a few times, through drink [emphasis]. But it's a good place to be in where they help ya. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.523576750105, lng: -0.031365039850177 },
+  },
+];
+
 const SJ13_Markers = [
   {
     id: 1,
@@ -1014,23 +1244,25 @@ const ZS07_Markers = [
   },
 ];
 
-const allMarkers = [...AB11_Markers, ...CK09_Markers, ...DM12_Markers, ...SJ13_Markers, ...TM08_Markers, ...ZS07_Markers];
+const allMarkers = [...AB11_Markers, ...CK09_Markers, ...DM12_Markers, ...DRESETMarch27_1_Markers, ...DRESETMarch27_2_Markers, ...SJ13_Markers, ...TM08_Markers, ...ZS07_Markers];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Navbar tabindex="1"/>
+    <Navbar tabIndex="1"/>
     <Routes>
       {/* <Route tabindex="2" path="/" element={<Main />} /> */}
       {/* <Route tabindex="3" path="/mapoverviewinformational" element={<MapOverviewInformational />} /> */}
-      <Route tabindex="3" path="/AB11_Walk" element={<GenericMap markers={AB11_Markers} />} />
-      <Route tabindex="4" path="/AN10_Walk" element={<GenericMap markers={AN10_Markers} />} />
-      <Route tabindex="5" path="/CK09_Walk" element={<GenericMap markers={CK09_Markers} />} />
-      <Route tabindex="6" path="/DM12_Walk" element={<GenericMap markers={DM12_Markers} />} />
-      <Route tabindex="7" path="/SJ13_Walk" element={<GenericMap markers={SJ13_Markers} />} />
-      <Route tabindex="8" path="/TM08_Walk" element={<GenericMap markers={TM08_Markers} />} />
-      <Route tabindex="9" path="/ZS07_Walk" element={<GenericMap markers={ZS07_Markers} />} />
-      <Route tabindex="10" path="/allMarkers" element={<GenericMap markers={allMarkers} />} />
+      <Route tabIndex="3" path="/AB11_Walk" element={<GenericMap key="AB11" isAllMarkers={false} markers={AB11_Markers} />} />
+      <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" isAllMarkers={false} markers={AN10_Markers} />} />
+      <Route tabIndex="5" path="/CK09_Walk" element={<GenericMap key="CK09" isAllMarkers={false} markers={CK09_Markers} />} />
+      <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" isAllMarkers={false} markers={DM12_Markers} />} />
+      <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
+      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
+      <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" isAllMarkers={false} markers={SJ13_Markers} />} />
+      <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" isAllMarkers={false} markers={TM08_Markers} />} />
+      <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" isAllMarkers={false} markers={ZS07_Markers} />} />
+      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" isAllMarkers={true} markers={allMarkers} />} />
     </Routes>
   </Router>
 );

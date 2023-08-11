@@ -1,10 +1,28 @@
 .commentSectionContainer {
-  width: 40vh;
+  /* width: 40vh; */
+  width: 20%;
+  height: 90vh;
+  padding: 10px;
   overflow-y: auto;
-  display: "flex";
-  justify-content: "center";
+  /* display: flex; */
+  justify-content: center;
   z-index: 1;
-  font-style: "30px blue";
+  font-size: "30px";
   border: 3px solid #000000;
-  position: "absolute";
+  /* position: "absolute"; */
+}
+
+.commentSectionContainer {
+  position: absolute;  
+  right: 0;   
+  width: 20%; 
+  height: 90vh;
+  padding: 10px;
+  overflow-y: auto;
+  /* display: flex; */
+  /* flex-direction: column;   */
+  /* justify-content: center; */
+  z-index: 1;
+  /* font-size: 30px;  */
+  border: 3px solid #000000;
 }
