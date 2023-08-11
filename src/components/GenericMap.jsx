@@ -33,8 +33,10 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
   const [showStreetView, setShowStreetView] = useState(false);
   const [contexts, setContexts] = useState([]);
   const [userId, setUserId] = useState(-1);
-
   const center = markers.length > 0 ? markers[0].position : null;
+
+  const [selectedPosition, setSelectedPosition] = useState(center);
+
 
   const options = {
     // disableDefaultUI: true,
@@ -146,7 +148,8 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
       <h1>{mapName}</h1>
       <GoogleMap
         mapContainerClassName="mapContainer"
-        center={center}
+        // center={center}
+        center={selectedPosition}
         zoom={16}
         options={options}
         onClick={() => setActiveMarker(null)}
@@ -175,7 +178,8 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
       markers={markers}
       userId={userId}
     />}
-      <ImageGallery markers={markers} />
+      {/* <ImageGallery markers={markers} markerSource={mapName} /> */}
+      <ImageGallery markers={markers} markerSource={mapName} onImageClick={setSelectedPosition} />
     </div>
   ) : (
     <div>Loading Map...</div>

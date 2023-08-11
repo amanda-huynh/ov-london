@@ -1,0 +1,15 @@
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.marker-name {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    z-index: 1;
+}
