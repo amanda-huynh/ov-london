@@ -8,6 +8,7 @@ import {
   GenericMap,
 } from "./components";
 import "./index.css";
+import MultipleMaps from "./components/MultipleMaps";
 
 const AB11_Markers = [
   {
@@ -501,6 +502,231 @@ const DM12_Markers = [
     ],
     type: "gem",
     position: { lat: 51.51360, lng: -0.02799 },
+  },
+];
+
+const DRESETMarch2_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETMarch2_photo1.jpg",
+    contexts: [
+        {
+          context:
+            `[PF: And you explain.]This is the Dellow Center where we eat and sleep and shower, and they look after us, and yeah. [PF: Yeah, perfect, then you click the red button]`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517122192387, lng: -0.071438103101474 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETMarch2_photo2.jpg",
+    contexts: [
+        {
+          context:
+            `This is the health center for the homeless and rough sleepers, and they help people and yeah, basically.  Yeah? [Turns to PF to continue go-along interview]`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517503996164, lng: -0.070916338694677 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETMarch2_photo3.jpg",
+    contexts: [
+        {
+          context:
+            `This is the house where I used to live, me and my partner. [wind, check go-along interview for better audio] She's gone, my partner passed away, you know, yeah. [emotional moment]`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517449122203, lng: -0.069812372723209 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETMarch2_photo4.jpg",
+    contexts: [
+      {
+        context:
+          `When I come home, yeah, yeah, this is all in the past now and it reminds me of my son, init? [emotional] Cuz yeah, I had a good memory in that house. I really miss them [emphasis]. Thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517550884248, lng: -0.06939712135162 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETMarch27_1_photo5.jpg",
+    contexts: [
+      {
+        context:
+          `[sirens in the background]. Ok. Yeah, this is the hostel where the homeless people, they used to live. But it's closed down, and now it's been closed and I don't know. So that's why, that's why people are sleeping rough and sleeping underneath the bridges. And uh you know, it's like you see everyone like everyone in the street sleeping like in the doorway. And some people are sleeping in the car. Some people are sleeping underneath the bridge. Some people sleeping in the hospital. Everyone, just to keep warm. And yeah. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518017956206, lng: -0.064877035653738 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETMarch2_photo6.jpg",
+    contexts: [
+      {
+        context:
+          `[PF: Go ahead, talk into the phone.] I said, yeah, I just wanted to like, to thank this hospital, init? Cus they saved my life, long time ago. So without them, I don't think I'd be here. So yeah, yeah this, the hospital. I love this hospital and I love this area as well so. Thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518549346072, lng: -0.06310758486964 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETMarch2_photo7.jpg",
+    contexts: [
+      {
+        context:
+          `So I used to, I don't know, it's always...Yeah, like I said, I used to sleep there and yeah, I don't know. So yeah, it brought back my memory. [PF: There was a nice security man.] Yeah, the security guy, he was a good guy as well. Yeah, thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518147868324, lng: -0.061603274113112 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETMarch2_photo8.jpg",
+    contexts: [
+      {
+        context:
+          `Yeah, I was gonna say, yeah to explain-- that we, I used to sleep there, me and four guys. Then yeah. Yeah, it's changed now. Now it's like, now you see like it's a dump. Yeah, thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.513524351607, lng: -0.05755884825451 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETMarch2_photo9.jpg",
+    contexts: [
+      {
+        context:
+          `Yeah, sorry, yeah what I was gonna say, like I said to you, sorry, this is what we used to sleep in a bus. I think there was ten people in there. Sleeping in there. I think another, another- look, look [points] you can see, look, people there, thinks they still sleeping there, we used to sleep there as well. And at the back. At least here at least 58 people, they used to sleep here. And I'll go there and take another picture there as well. 
+
+          [PF: And would you say it's positive (asks for clarification because citizen scientist selected green)?]
+          
+          Yeah yeah positive, yeah. 
+          
+          [PF: Why?] 
+          
+          Yeah, no no no, negative. No, I don't want this. This is not me. I don't want to sleep here. No, it's not me. I don't want this. No, sorry. Yeah, thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.513791665789, lng: -0.057458066869111 },
+  },
+  {
+    id: 10,
+    name: "10",
+    image: "/gems-issues/DRESETMarch2_photo10.jpg",
+    contexts: [
+      {
+        context:
+          `Yeah and in this place as well. Same place. We used to sleep there, me and [name], and [name]. There was a bout ten of em. And some drug users used to come everyday, every night, they used to stay all night. Smoking, don't know what they're doing. It's like screaming and shouting. It's not even clean, look, even people, they go and use the toilet there. Yeah, it's not nice. Yeah, thank you very much. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.51432737948, lng: -0.057925649152862 },
+  },
+  {
+    id: 11,
+    name: "11",
+    image: "/gems-issues/DRESETMarch2_photo11.jpg",
+    contexts: [
+      {
+        context:
+          `And like, yeah, same as well, same place as well. So like here, like we said, too many people used to sleep here as well. 
+          [PF: And it's dirty.] 
+          Yeah, you see init? Yeah, thank you, you can see it's very dirty, not even clean, people use toilet there and you can smell stuff. You got sleeping bags in there as well. Yeah, thank you very much.  `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.519332412437, lng: -0.057900527640049 },
+  },
+  {
+    id: 12,
+    name: "12",
+    image: "/gems-issues/DRESETMarch2_photo12.jpg",
+    contexts: [
+      {
+        context:
+          `Like I want to say, yeah, I want to thank that cleaner as well. He's always used to help us and clean it for us there, and they used to clean it for us and find bedding, and stuff. He used to bring it to us. And yeah I just want to thank him. This is his van, and he's sitting there, I don't wanna go cus he's talking, I don't wanna go and see him. He's an uncle, good guy. Thank you very much.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.513676601015, lng: -0.060926802884287 },
+  },
+  {
+    id: 13,
+    name: "13",
+    image: "/gems-issues/DRESETMarch2_photo13.jpg",
+    contexts: [
+      {
+        context:
+          `Yeah, like I said this is another door as well, so another exit as well from that side. You got this one, and that one. And that one, it's about four exits. So this is the best one. 
+
+          [PF: And it's good because?]
+          
+          Yeah, they leave it open for us as well, they don't even close it. Yeah, thank you. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.512413122872, lng: -0.04906563960936 },
+  },
+  {
+    id: 14,
+    name: "14",
+    image: "/gems-issues/DRESETMarch2_photo14.jpg",
+    contexts: [
+      {
+        context:
+          `Basically what I'm saying that this is East London Mosque. So they should be like at least, like I said they got showers in there and stuff I know cuz they don't give us no food nothing and just like shower. Some time ago, I have a shower and just take people like from all different, sorry, all different backgrounds and just take them have a shower. And yeah, so I don't know they at least they should help us. YEAH [emphasis], give us food or something cuz sometimes we're hungry. So go and have a shower. We asked the brother, please I need some food. 'I'm sorry, brother we don't do no food, we don't no food.' He said, 'no we don't do no food.' [emphasis]. He said, 'yeah, shower? Huh, go and wash if you want.' So it shouldn't be like that, it shouldn't be open because worship you know it should be left. In India, what they do, they feed people they everything, if I wanna eat. Why they don't do that here? Because we got money, they got everything. People, they donate every single day.
+
+          [PF: Yeah. Where's the money going?]
+          
+          Exactly! Because it's corruption. Tower Hamlets, I'll be honest with you, I'll be honest. I'm telling the truth, though. It's all and... most of them, they're corrupt!
+          
+          [PF: Them being mosques?]
+          
+          Yeah, the people that are running the mosque. I'll be honest with you. I'll tell, I'll tell them in the face. Because it's true. Because what they're doing, they're corrupt. They got houses, restaurants and what they do? They just collect the money, collect the money. Forget the homeless and forget the people that need. So we need more than them. So you got house, you got, you got a business. I've got nothing. Please help me, give me something to eat or something. I'm not asking for much. I just want something to eat because I'm hungry. I don't want to go to Tesco, Sainsbury and stealing. I don't want to get in trouble.
+          
+          [PF: Who do you think.. you know, in the community meeting, I want to invite people. Maybe we should ask somebody from the mosque to come?]
+           
+          Yeah! yeah, to come, please. I'll come and explain that. And I've got proof and everything I've got for you.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.517761338308, lng: -0.065759425590635 },
   },
 ];
 
@@ -1253,6 +1479,7 @@ const allMarkers = [
     ...tagWithSource("DM12", DM12_Markers),
     ...tagWithSource("DRESET March 27 (1)", DRESETMarch27_1_Markers),
     ...tagWithSource("DRESET March 27 (2)", DRESETMarch27_2_Markers),
+    ...tagWithSource("DRESET March 2", DRESETMarch2_Markers),
     ...tagWithSource("SJ13", SJ13_Markers),
     ...tagWithSource("TM08", TM08_Markers),
     ...tagWithSource("ZS07", ZS07_Markers)
@@ -1271,6 +1498,8 @@ root.render(
       <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" mapName="DM12 Walk" isAllMarkers={false} markers={DM12_Markers} />} />
       <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" mapName="DRESET March 27 (1) Walk" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
       <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
+      <Route tabIndex="8" path="/DRESETMarch2_Walk" element={<GenericMap key="DRESET_March_2" mapName="DRESET March 2 Walk" isAllMarkers={false} markers={DRESETMarch2_Markers} />} />
+      <Route tabIndex="8" path="/MultipleMaps" element={<MultipleMaps key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
       <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
       <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
       <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
