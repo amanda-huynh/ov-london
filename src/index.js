@@ -505,6 +505,396 @@ const DM12_Markers = [
   },
 ];
 
+const DRESETFebruary9_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETFebruary9_photo1.jpg",
+    contexts: [
+        {
+          context:
+            `[PF: And then you explain why did you take that photo] 
+
+            Photo of local day center where I come for food, a wash, and other bits and pieces for my good health. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.5171670188, lng: -0.071480296392404 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETFebruary9_photo2.jpg",
+    contexts: [
+        {
+          context:
+            `Pebble street two seconds from the center. If you're walking, not very nice on your feet.`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "both",
+    position: { lat: 51.517431197313, lng: -0.070720791089453 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETFebruary9_photo3.jpg",
+    contexts: [
+        {
+          context:
+            `OK, a picture of pavement. As we get closer to the city, it may not seems like that on the photo, but the pavement slowly gets cleaner and cleaner. I don't know whether that's got to do with politics or money, but definite difference. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.518355760506, lng: -0.063796350144084 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETFebruary9_photo4.jpg",
+    contexts: [
+      {
+        context:
+          `Black sheep coffee, Aldgate station, if you're homeless they allow you a free coffee, and on a good day maybe a bun as well. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.52000477296, lng: -0.062427460761546 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETFebruary9_photo5.jpg",
+    contexts: [
+      {
+        context:
+          `Um, picture of steps at the church where I would drink my free coffee and bun. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.519879481535, lng: -0.062442445960784 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETFebruary9_photo6.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - below is from go along walk audio.]
+
+          Local um park has a bit of a sun trap when the sun comes out with a dancing fountain, pretty relaxing. And especially when it's been a bit of a strange day.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.519643602052, lng: -0.061689593206698 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETFebruary9_photo7.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk to ensure this is correct.]
+
+          Some kind of grip on the corner of most roads, which is fine if you want a grip change but... if you have painful feet.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.519039953032, lng: -0.059123526901205 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETFebruary9_photo8.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517304446056, lng: -0.059698531250461 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETFebruary9_photo9.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.517541562803, lng: -0.057185654998527 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETFebruary9_photo8.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.518741560342, lng: -0.057455175171972 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETFebruary9_photo9.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.51883633135, lng: -0.057360896668949 },
+  },
+  {
+    id: 10,
+    name: "10",
+    image: "/gems-issues/DRESETFebruary9_photo10.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.519050790548, lng: -0.057331604491472 },
+  },
+  {
+    id: 11,
+    name: "11",
+    image: "/gems-issues/DRESETFebruary9_photo11.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.519545870982, lng: -0.057639718537876 },
+  },
+  {
+    id: 12,
+    name: "12",
+    image: "/gems-issues/DRESETFebruary9_photo12.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.519258621534, lng: -0.059572453921636 },
+  },
+  {
+    id: 13,
+    name: "13",
+    image: "/gems-issues/DRESETFebruary9_photo13.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.517097266377, lng: -0.071488156095891 },
+  },
+  {
+    id: 14,
+    name: "14",
+    image: "/gems-issues/DRESETFebruary9_photo14.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.516932946977, lng: -0.071730267073858 },
+  },
+];
+
+const DRESETFebruary17_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETFebruary17_photo1.jpg",
+    contexts: [
+        {
+          context:
+            `[PF: And then you explain why did you take that photo] 
+
+            Photo of local day center where I come for food, a wash, and other bits and pieces for my good health. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517097266377, lng: -0.071488156095891 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETFebruary17_photo2.jpg",
+    contexts: [
+        {
+          context:
+            `Pebble street two seconds from the center. If you're walking, not very nice on your feet.`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "concern",
+    position: { lat: 51.516932946977, lng: -0.071730267073858 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETFebruary17_photo3.jpg",
+    contexts: [
+        {
+          context:
+            `OK, a picture of pavement. As we get closer to the city, it may not seems like that on the photo, but the pavement slowly gets cleaner and cleaner. I don't know whether that's got to do with politics or money, but definite difference. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.514388882473, lng: -0.074246585397949 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETFebruary17_photo4.jpg",
+    contexts: [
+      {
+        context:
+          `Black sheep coffee, Aldgate station, if you're homeless they allow you a free coffee, and on a good day maybe a bun as well. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.51403193097, lng: -0.075468412753873 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETFebruary17_photo5.jpg",
+    contexts: [
+      {
+        context:
+          `Um, picture of steps at the church where I would drink my free coffee and bun. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.513768037688, lng: -0.076113180541851 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETFebruary17_photo6.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - below is from go along walk audio.]
+
+          Local um park has a bit of a sun trap when the sun comes out with a dancing fountain, pretty relaxing. And especially when it's been a bit of a strange day.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.514175444594, lng: -0.076953498114335 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETFebruary17_photo7.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk to ensure this is correct.]
+
+          Some kind of grip on the corner of most roads, which is fine if you want a grip change but... if you have painful feet.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.513667830162, lng: -0.076368832000179 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETFebruary17_photo8.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "concern",
+    position: { lat: 51.514095176907, lng: -0.074799087312677 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETFebruary17_photo9.jpg",
+    contexts: [
+      {
+        context:
+          `[Did not pick up - review go along walk.]
+
+          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.513981523513, lng: -0.074577866729764 },
+  },
+];
+
 const DRESETMarch2_Markers = [
   {
     id: 1,
@@ -1477,9 +1867,11 @@ const allMarkers = [
     ...tagWithSource("AB11", AB11_Markers),
     ...tagWithSource("CK09", CK09_Markers),
     ...tagWithSource("DM12", DM12_Markers),
+    ...tagWithSource("DRESET February 9", DRESETFebruary9_Markers),
+    ...tagWithSource("DRESET February 17", DRESETFebruary17_Markers),
+    ...tagWithSource("DRESET March 2", DRESETMarch2_Markers),
     ...tagWithSource("DRESET March 27 (1)", DRESETMarch27_1_Markers),
     ...tagWithSource("DRESET March 27 (2)", DRESETMarch27_2_Markers),
-    ...tagWithSource("DRESET March 2", DRESETMarch2_Markers),
     ...tagWithSource("SJ13", SJ13_Markers),
     ...tagWithSource("TM08", TM08_Markers),
     ...tagWithSource("ZS07", ZS07_Markers)
@@ -1496,10 +1888,12 @@ root.render(
       <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" mapName="AN10 Walk"  isAllMarkers={false} markers={AN10_Markers} />} />
       <Route tabIndex="5" path="/CK09_Walk" element={<GenericMap key="CK09" mapName="CK09 Walk" isAllMarkers={false} markers={CK09_Markers} />} />
       <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" mapName="DM12 Walk" isAllMarkers={false} markers={DM12_Markers} />} />
-      <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" mapName="DRESET March 27 (1) Walk" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
-      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
+      <Route tabIndex="8" path="/DRESETFebruary9_Walk" element={<GenericMap key="DRESET_February_9" mapName="DRESET February 17 Walk" isAllMarkers={false} markers={DRESETFebruary9_Markers} />} />
+      <Route tabIndex="8" path="/DRESETFebruary17_Walk" element={<GenericMap key="DRESET_February_17" mapName="DRESET February 17 Walk" isAllMarkers={false} markers={DRESETFebruary17_Markers} />} />
       <Route tabIndex="8" path="/DRESETMarch2_Walk" element={<GenericMap key="DRESET_March_2" mapName="DRESET March 2 Walk" isAllMarkers={false} markers={DRESETMarch2_Markers} />} />
-      <Route tabIndex="8" path="/MultipleMaps" element={<MultipleMaps key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
+      {/* <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" mapName="DRESET March 27 (1) Walk" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
+      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} /> */}
+      <Route tabIndex="8" path="/MultipleMaps" element={<MultipleMaps key="DRESET_March27" mapName="DRESET March 27 Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
       <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
       <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
       <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
