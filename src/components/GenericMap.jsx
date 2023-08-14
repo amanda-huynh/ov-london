@@ -89,23 +89,30 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
         let streetViewInfowindow = new window.google.maps.InfoWindow({
           pixelOffset: new window.google.maps.Size(0, -48),
         });
-        let markerOptions = {          
+        let markerIconUrl;
+
+        if (marker.type === "gem") {
+          markerIconUrl = "http://maps.google.com/mapfiles/ms/icons/green-dot.png";
+        } else if (marker.type === "concern") {
+          markerIconUrl = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+        } else if (marker.type === "none") {
+          markerIconUrl = "http://maps.google.com/mapfiles/ms/icons/purple-dot.png";
+        } else if (marker.type === "both") {
+          markerIconUrl = "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
+        }
+        
+        let markerOptions = {
           position: position,
           map: map,
           title: marker.name,
           label: marker.name,
           visible: isMarkerVisible,
-          icon:
-          marker.type === "gem"
-          ? {
-              url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-              scaledSize: new window.google.maps.Size(55, 55),
-          }
-          : {
-              url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-              scaledSize: new window.google.maps.Size(55, 55),
+          icon: {
+            url: markerIconUrl,
+            scaledSize: new window.google.maps.Size(55, 55),
           },
         };
+        
 
         if (!isAllMarkers) {
           markerOptions.title = marker.name;

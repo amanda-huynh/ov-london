@@ -513,9 +513,11 @@ const DRESETFebruary9_Markers = [
     contexts: [
         {
           context:
-            `[PF: And then you explain why did you take that photo] 
+            `[PF: And then you talk into it. So, why did you take that photo?]
 
-            Photo of local day center where I come for food, a wash, and other bits and pieces for my good health. `,
+            Um yeah, I take this photo because this is one of the organizations which is called Providence Row, otherwise The Dellow, which help with vulnerable and homeless people. And that's where I'm like, literally living upstairs at The Dellow at the moment until I can be housed properly.
+            
+            [PF: Ok, and then you click the red...]`,
           createdAt: Date.now().toString(),
         },
     ],
@@ -529,7 +531,13 @@ const DRESETFebruary9_Markers = [
     contexts: [
         {
           context:
-            `Pebble street two seconds from the center. If you're walking, not very nice on your feet.`,
+            `Oh yeah, this is Brick Lane, it's one of the most famous lane in London, one of the most famous and old market in London surrounded the story of like Jack the Ripper, which is the serial killer you know about this? 
+
+            [PF: Yeah.] 
+            
+            He was local around this market around this area. And this has been a very like interesting market because it's keep most it's old features like from back in a century ago and stuff like that. Yes. It's a good market where people come and socialize and bring up community spirit. Very good, community. 
+            
+            [PF: Nice. And then you click stop.]`,
           createdAt: Date.now().toString(),
         },
     ],
@@ -543,7 +551,7 @@ const DRESETFebruary9_Markers = [
     contexts: [
         {
           context:
-            `OK, a picture of pavement. As we get closer to the city, it may not seems like that on the photo, but the pavement slowly gets cleaner and cleaner. I don't know whether that's got to do with politics or money, but definite difference. `,
+            `Yeah, that's Reset, that's one of the organization that helps people deal with addiction, which I'm getting engaged in at the moment. And, it's pretty good so far, so I would recommend it to anyone like  struggling with addiction.`,
           createdAt: Date.now().toString(),
         },
     ],
@@ -557,7 +565,9 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `Black sheep coffee, Aldgate station, if you're homeless they allow you a free coffee, and on a good day maybe a bun as well. `,
+          `[PF: ...Explain the park]
+
+          Yeah, that's one of the park like we mainly sit, chill out, like maybe have a drink. People smoking drugs would normally smoke openly in the park.`,
         createdAt: Date.now().toString(),
       },
     ],
@@ -571,7 +581,7 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `Um, picture of steps at the church where I would drink my free coffee and bun. `,
+          `Yeah most of these doorways, you find them all over the place in apartment blocks. But this is where like, people come and have like quick smoke.`,
         createdAt: Date.now().toString(),
       },
     ],
@@ -585,9 +595,7 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - below is from go along walk audio.]
-
-          Local um park has a bit of a sun trap when the sun comes out with a dancing fountain, pretty relaxing. And especially when it's been a bit of a strange day.`,
+          `Yeah, this bridge is like one of the main meeting points like where people come and pick their drugs up, so this is definitely. [Loud revving noise throughout]`,
         createdAt: Date.now().toString(),
       },
     ],
@@ -601,9 +609,7 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk to ensure this is correct.]
-
-          Some kind of grip on the corner of most roads, which is fine if you want a grip change but... if you have painful feet.`,
+          `Yeah, as you can see here in Whitechapel we have a massive hospital, the Royal Hospital. But there's always room for improvement. Cuz like if you meant to go Accident and Emergency, the waiting time is like four hours or more. So that's the area that could do with like a bit of improvement. There was like a demonstration there yesterday [both laugh[ with the with the nurses, yeah the other nurses, and employees at this hospital, they were demonstrating today. Yes, please are you alright? [to another person, who replies: "How are you"]. So the government like needs to do something in that area, like maybe um wage improvements with the working condition. Like that will attract more people to want to get a career in the health department and with better paid, more employees, better working condition. Obviously the service is going to improve init?`,
         createdAt: Date.now().toString(),
       },
     ],
@@ -617,9 +623,7 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+          `Yeah, I was in this is eye clinic roughly around two months ago with a eye injury, which I had treated, and everything went well so. `,
         createdAt: Date.now().toString(),
       },
     ],
@@ -633,46 +637,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+          `Oh yeah, that's the other side of the hospital. As you can see it's a massive hospital but we still have waiting issue in the emergency department. So that's something like we need to get addressed like from the politicians or prime minister.`,
         createdAt: Date.now().toString(),
       },
     ],
     type: "concern",
     position: { lat: 51.517541562803, lng: -0.057185654998527 },
-  },
-  {
-    id: 8,
-    name: "8",
-    image: "/gems-issues/DRESETFebruary9_photo8.jpg",
-    contexts: [
-      {
-        context:
-          `[Did not pick up - review go along walk.]
-
-          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
-        createdAt: Date.now().toString(),
-      },
-    ],
-    type: "none",
-    position: { lat: 51.518741560342, lng: -0.057455175171972 },
-  },
-  {
-    id: 9,
-    name: "9",
-    image: "/gems-issues/DRESETFebruary9_photo9.jpg",
-    contexts: [
-      {
-        context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
-        createdAt: Date.now().toString(),
-      },
-    ],
-    type: "none",
-    position: { lat: 51.51883633135, lng: -0.057360896668949 },
   },
   {
     id: 10,
@@ -681,14 +651,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+          `Yeah few months ago, that's where I normally slept. I slept there like for three months, before getting help from the Dellow Center. So, that's, that's one of the spot that I normally sleep when I was homeless. `,
         createdAt: Date.now().toString(),
       },
     ],
     type: "none",
-    position: { lat: 51.519050790548, lng: -0.057331604491472 },
+    position: { lat: 51.518741560342, lng: -0.057455175171972 },
   },
   {
     id: 11,
@@ -697,14 +665,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+          `Yeah this is the back of the mission, White Chapel Mission, which I mentioned earlier on in this talk, Like you can go there for like breakfast, I'm sure and a change of clothes. Yeah so we are moving around to the front.`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519545870982, lng: -0.057639718537876 },
+    type: "none",
+    position: { lat: 51.51883633135, lng: -0.057360896668949 },
   },
   {
     id: 12,
@@ -713,14 +679,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Down in the alley way, people dump stuff...it seems to be decent, a convenient dumping site for rubbish and people going to the toilet. `,
+          `Front entrance for the mission. [loud noises]`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519258621534, lng: -0.059572453921636 },
+    type: "none",
+    position: { lat: 51.519050790548, lng: -0.057331604491472 },
   },
   {
     id: 13,
@@ -729,14 +693,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+          `Yeah, that's that's the local library, that's White Chapel Library. I normally sleep on the library, like this library normally be my home like for a few months, so bring back a lot of memories.`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "gem",
-    position: { lat: 51.517097266377, lng: -0.071488156095891 },
+    type: "both",
+    position: { lat: 51.519545870982, lng: -0.057639718537876 },
   },
   {
     id: 14,
@@ -745,14 +707,12 @@ const DRESETFebruary9_Markers = [
     contexts: [
       {
         context:
-          `[Did not pick up - review go along walk.]
-
-          Small pub in the same alley way. It would be a nice place to take somebody, but if you if come out to the smell of pee and rubbish, ... the fact that this pub actually exists.`,
+          `Yeah, that's White Chapel underground station. Yeah White Chapel have a good connection when it comes to travel. You can go to Central quite easily, they have a good bus, underground. So traveling isn't a big issue like traveling from White Chapel to elsewhere in London. But there is a slight problems, like sometime at peak hours with the overcrowding and, and stuff on the on underground on the buses so that's something that we look into.`,
         createdAt: Date.now().toString(),
       },
     ],
-    type: "concern",
-    position: { lat: 51.516932946977, lng: -0.071730267073858 },
+    type: "both",
+    position: { lat: 51.519258621534, lng: -0.059572453921636 },
   },
 ];
 
@@ -1888,16 +1848,25 @@ root.render(
       <Route tabIndex="4" path="/AN10_Walk" element={<GenericMap key="AN10" mapName="AN10 Walk"  isAllMarkers={false} markers={AN10_Markers} />} />
       <Route tabIndex="5" path="/CK09_Walk" element={<GenericMap key="CK09" mapName="CK09 Walk" isAllMarkers={false} markers={CK09_Markers} />} />
       <Route tabIndex="6" path="/DM12_Walk" element={<GenericMap key="DM12" mapName="DM12 Walk" isAllMarkers={false} markers={DM12_Markers} />} />
-      <Route tabIndex="8" path="/DRESETFebruary9_Walk" element={<GenericMap key="DRESET_February_9" mapName="DRESET February 17 Walk" isAllMarkers={false} markers={DRESETFebruary9_Markers} />} />
-      <Route tabIndex="8" path="/DRESETFebruary17_Walk" element={<GenericMap key="DRESET_February_17" mapName="DRESET February 17 Walk" isAllMarkers={false} markers={DRESETFebruary17_Markers} />} />
-      <Route tabIndex="8" path="/DRESETMarch2_Walk" element={<GenericMap key="DRESET_March_2" mapName="DRESET March 2 Walk" isAllMarkers={false} markers={DRESETMarch2_Markers} />} />
-      {/* <Route tabIndex="7" path="/DRESETMarch27_1_Walk" element={<GenericMap key="DRESET_March27_1" mapName="DRESET March 27 (1) Walk" isAllMarkers={false} markers={DRESETMarch27_1_Markers} />} />
-      <Route tabIndex="8" path="/DRESETMarch27_2_Walk" element={<GenericMap key="DRESET_March27_2" mapName="DRESET March 27 (2) Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} /> */}
-      <Route tabIndex="8" path="/MultipleMaps" element={<MultipleMaps key="DRESET_March27" mapName="DRESET March 27 Walk" isAllMarkers={false} markers={DRESETMarch27_2_Markers} />} />
-      <Route tabIndex="9" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
-      <Route tabIndex="10" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
-      <Route tabIndex="11" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
-      <Route tabIndex="12" path="/allMarkers" element={<GenericMap key="allMarkers" mapName="All Walk Data" isAllMarkers={true} markers={allMarkers} />} />
+      <Route tabIndex="7" 
+        path="/MultipleMaps" 
+          element={
+              <MultipleMaps 
+                  key="DRESET_February9" 
+                  mapName="DRESET February 9 Walk" 
+                  isAllMarkers={false} 
+                  markersDRESETFebruary9={DRESETFebruary9_Markers}
+                  markersDRESETFebruary17={DRESETFebruary17_Markers}
+                  markersDRESETMarch2={DRESETMarch2_Markers}
+                  markersDRESETMarch27_1={DRESETMarch27_1_Markers}
+                  markersDRESETMarch27_2={DRESETMarch27_2_Markers}
+              />
+          } 
+      />
+      <Route tabIndex="8" path="/SJ13_Walk" element={<GenericMap key="SJ13" mapName="SJ13 Walk" isAllMarkers={false} markers={SJ13_Markers} />} />
+      <Route tabIndex="9" path="/TM08_Walk" element={<GenericMap key="TM08" mapName="TM08 Walk" isAllMarkers={false} markers={TM08_Markers} />} />
+      <Route tabIndex="10" path="/ZS07_Walk" element={<GenericMap key="ZS07" mapName="ZS07 Walk" isAllMarkers={false} markers={ZS07_Markers} />} />
+      <Route tabIndex="11" path="/allMarkers" element={<GenericMap key="allMarkers" mapName="All Walk Data" isAllMarkers={true} markers={allMarkers} />} />
     </Routes>
   </Router>
 );

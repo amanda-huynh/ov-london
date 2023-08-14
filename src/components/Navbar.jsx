@@ -5,10 +5,6 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className="navbar" tabIndex="1">
-            {/* <div>
-                <img src={SmallLogo} alt='Small Logo' />
-            </div> */}
-
             {/* Navigation Bar */}
             <ul>
                 <li tabIndex="2">
@@ -26,40 +22,19 @@ const Navbar = () => {
                 <li tabIndex="5">
                     <Link to='/CK09_Walk'>CK09 Walk</Link>
                 </li>
-                {/* <li tabIndex="6">
-                    <Link to='/DM12_Walk'>DM12 Walk</Link>
-                </li>
-                <li tabIndex="8">
-                    <Link to='/DRESETFebruary9_Walk'>DRESET February 9 Walk </Link>
-                </li>
-                <li tabIndex="8">
-                    <Link to='/DRESETFebruary17_Walk'>DRESET February 17 Walk </Link>
-                </li>
-                <li tabIndex="8">
-                    <Link to='/DRESETMarch2_Walk'>DRESET March 2 Walk </Link>
-                </li> */}
-                {/* <li tabIndex="12">
-                    <Link to='/multipleMaps'>DRESET March 27 Walks</Link>
-                </li> */}
-                {/* <li tabIndex="7">
-                    <Link to='/DRESETMarch27_1_Walk'>DRESET March 27 Walk 1 </Link>
-                </li>
-                <li tabIndex="8">
-                    <Link to='/DRESETMarch27_2_Walk'>DRESET March 27 Walk 2 </Link>
-                </li> */}
-                <li tabIndex="12">
+                <li tabIndex="6">
                     <Link to='/multipleMaps'>DRESET Walks</Link>
                 </li>
-                <li tabIndex="9">
+                <li tabIndex="7">
                     <Link to='/SJ13_Walk'>SJ13 Walk</Link>
                 </li>
-                <li tabIndex="10">
+                <li tabIndex="8">
                     <Link to='/TM08_Walk'>TM08 Walk</Link>
                 </li>
-                <li tabIndex="11">
+                <li tabIndex="9">
                     <Link to='/ZS07_Walk'>ZS07 Walk</Link>
                 </li>
-                <li tabIndex="12">
+                <li tabIndex="10">
                     <Link to='/allMarkers'>All Markers</Link>
                 </li>
             </ul>
