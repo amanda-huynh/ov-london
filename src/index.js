@@ -521,8 +521,8 @@ const DRESETJanuary31_Markers = [
           createdAt: Date.now().toString(),
         },
     ],
-    type: "gem",
-    position: { lat: 51.5171670188, lng: -0.071480296392404 },
+    type: "both",
+    position: { lat: 51.517463585572, lng: -0.070489549437157 },
   },
   {
     id: 2,
@@ -541,8 +541,8 @@ const DRESETJanuary31_Markers = [
           createdAt: Date.now().toString(),
         },
     ],
-    type: "both",
-    position: { lat: 51.517431197313, lng: -0.070720791089453 },
+    type: "gem",
+    position: { lat: 51.51767066648, lng: -0.07091626075694 },
   },
   {
     id: 3,
@@ -556,7 +556,7 @@ const DRESETJanuary31_Markers = [
         },
     ],
     type: "gem",
-    position: { lat: 51.518355760506, lng: -0.063796350144084 },
+    position: { lat: 51.518038623979, lng: -0.070975010790129 },
   },
   {
     id: 4,
@@ -572,7 +572,7 @@ const DRESETJanuary31_Markers = [
       },
     ],
     type: "both",
-    position: { lat: 51.52000477296, lng: -0.062427460761546 },
+    position: { lat: 51.519017211816, lng: -0.071774031738636 },
   },
   {
     id: 5,
@@ -586,7 +586,7 @@ const DRESETJanuary31_Markers = [
       },
     ],
     type: "concern",
-    position: { lat: 51.519879481535, lng: -0.062442445960784 },
+    position: { lat: 51.51931484463, lng: -0.071783897518962 },
   },
   {
     id: 6,
@@ -599,8 +599,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "concern",
-    position: { lat: 51.519643602052, lng: -0.061689593206698 },
+    type: "gem",
+    position: { lat: 51.519433434612, lng: -0.07257780282527 },
   },
   {
     id: 7,
@@ -613,8 +613,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519039953032, lng: -0.059123526901205 },
+    type: "gem",
+    position: { lat: 51.519810467909, lng: -0.073306183606414 },
   },
   {
     id: 8,
@@ -628,7 +628,7 @@ const DRESETJanuary31_Markers = [
       },
     ],
     type: "gem",
-    position: { lat: 51.517304446056, lng: -0.059698531250461 },
+    position: { lat: 51.520404522534, lng: -0.074221034548083 },
   },
   {
     id: 9,
@@ -641,8 +641,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "concern",
-    position: { lat: 51.517541562803, lng: -0.057185654998527 },
+    type: "gem",
+    position: { lat: 51.520240081976, lng: -0.07423791084904 },
   },
   {
     id: 10,
@@ -655,8 +655,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "none",
-    position: { lat: 51.518741560342, lng: -0.057455175171972 },
+    type: "gem",
+    position: { lat: 51.519636369819, lng: -0.074241187528791 },
   },
   {
     id: 11,
@@ -669,8 +669,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "none",
-    position: { lat: 51.51883633135, lng: -0.057360896668949 },
+    type: "concern",
+    position: { lat: 51.518994365907, lng: -0.07359781088791 },
   },
   {
     id: 12,
@@ -683,8 +683,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "none",
-    position: { lat: 51.519050790548, lng: -0.057331604491472 },
+    type: "gem",
+    position: { lat: 51.516793885431, lng: -0.07288241614365 },
   },
   {
     id: 13,
@@ -697,8 +697,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519545870982, lng: -0.057639718537876 },
+    type: "gem",
+    position: { lat: 51.516572371597, lng: -0.072709664366195 },
   },
   {
     id: 14,
@@ -711,8 +711,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519258621534, lng: -0.059572453921636 },
+    type: "gem",
+    position: { lat: 51.517121958936, lng: -0.071695881852838 },
   },
   {
     id: 15,
@@ -725,8 +725,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "none",
-    position: { lat: 51.51883633135, lng: -0.057360896668949 },
+    type: "gem",
+    position: { lat: 51.51669196304, lng: -0.071294388946115 },
   },
   {
     id: 16,
@@ -740,7 +740,7 @@ const DRESETJanuary31_Markers = [
       },
     ],
     type: "none",
-    position: { lat: 51.519050790548, lng: -0.057331604491472 },
+    position: { lat: 51.516704127653, lng: -0.071389770072488 },
   },
   {
     id: 17,
@@ -753,8 +753,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519545870982, lng: -0.057639718537876 },
+    type: "gem",
+    position: { lat: 51.516550804872, lng: -0.071270219313353 },
   },
   {
     id: 18,
@@ -767,8 +767,8 @@ const DRESETJanuary31_Markers = [
         createdAt: Date.now().toString(),
       },
     ],
-    type: "both",
-    position: { lat: 51.519258621534, lng: -0.059572453921636 },
+    type: "gem",
+    position: { lat: 51.516665844205, lng: -0.071263524712251 },
   },
 ];
 
