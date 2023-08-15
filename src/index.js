@@ -505,6 +505,77 @@ const DM12_Markers = [
   },
 ];
 
+const DRESETJanuary29_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETJanuary29_photo1.jpg",
+    contexts: [
+        {
+          context:
+            `This is the, the road work going on, and uh people uh cannot walk on the pavement because it's blocked. And it's the unhealthy type of work going on. Not showing the community to the helpful way to cross the street.`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "both",
+    position: { lat: 51.517463585572, lng: -0.070489549437157 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETJanuary29_photo2.jpg",
+    contexts: [
+        {
+          context:
+            `I used this picture for the, the walking path. Walking on the sidewalk because it looks like unhelathy type of pavement. This is doesn't clean always, by the sweeper. Doesn't look like it's clean always. It doesn't show the whole very healthily. On this pavement.
+
+            PF: Yeah, what's, what's bad about the pavement?
+            
+            It is unclean.
+            
+            PF: It's unclean. Okay. And does it get in the way of anything for you?  Yeah.  What does it get in the way of?
+            
+            When I walking on that side,  that side is all the time stinky, it doesn't clean always.
+            
+            PF: It smells bad. Yeah. Okay. Got it. [Starts to help with DT] Okay, click stop. 
+            
+            [recorded on project device, but not uploaded, transcribed directly from project device]`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.51767066648, lng: -0.07091626075694 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETJanuary29_photo3.jpg",
+    contexts: [
+        {
+          context:
+            `[Drilling noises] Again, I see the footpath is closed, they're working on the payment. They do this kind of work in the payment because they're working. In this working situation they might be have health and safety rules, to how to use the pavement. I don't know what this is, they're working. That's it. [Drilling noise in background the entire time]. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.518038623979, lng: -0.070975010790129 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETJanuary29_photo4.jpg",
+    contexts: [
+      {
+        context:
+          `This is East London Mosque. I go to some times and I spend some time over here. This is a nice mosque and people are nice, and they are very good people, will go to there to spend some time on the mosque and the time for the prayers. And during the prayer the people doesn't use the service on that on the... otherwise people use the service.`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "both",
+    position: { lat: 51.519017211816, lng: -0.071774031738636 },
+  },
+];
+
 const DRESETJanuary31_Markers = [
   {
     id: 1,
@@ -2094,6 +2165,7 @@ const allMarkers = [
     ...tagWithSource("AB11", AB11_Markers),
     ...tagWithSource("CK09", CK09_Markers),
     ...tagWithSource("DM12", DM12_Markers),
+    ...tagWithSource("DRESET January 29", DRESETJanuary29_Markers),
     ...tagWithSource("DRESET January 31", DRESETJanuary31_Markers),
     ...tagWithSource("DRESET February 9", DRESETFebruary9_Markers),
     ...tagWithSource("DRESET February 17", DRESETFebruary17_Markers),
@@ -2123,6 +2195,7 @@ root.render(
                   key="DRESET_February9" 
                   mapName="DRESET February 9 Walk" 
                   isAllMarkers={false} 
+                  markersDRESETJanuary29={DRESETJanuary29_Markers}
                   markersDRESETJanuary31={DRESETJanuary31_Markers}
                   markersDRESETFebruary9={DRESETFebruary9_Markers}
                   markersDRESETFebruary17={DRESETFebruary17_Markers}
