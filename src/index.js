@@ -505,6 +505,503 @@ const DM12_Markers = [
   },
 ];
 
+const DRESETOctober26_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETOctober26_photo1.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "good",
+    position: { lat: 51.516613371533, lng: -0.071469990690213 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETOctober26_photo2.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.516287368771, lng: -0.069096889346902 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETOctober26_photo3.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517084964986, lng: -0.06664147922432 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETOctober26_photo4.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.51705673028, lng: -0.065675734109168 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETOctober26_photo5.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517100515278, lng: -0.064630967619678 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETOctober26_photo6.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "none",
+    position: { lat: 51.517573404174, lng: -0.0627522077412 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETOctober26_photo7.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.517835338648, lng: -0.06252111867076 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETOctober26_photo8.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.518446820802, lng: -0.062987831069964 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETOctober26_photo9.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.518729703504, lng: -0.062842865659121 },
+  },
+  {
+    id: 10,
+    name: "10",
+    image: "/gems-issues/DRESETOctober26_photo10.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "both",
+    position: { lat: 51.518659547967, lng: -0.062648803577986 },
+  },
+  {
+    id: 11,
+    name: "11",
+    image: "/gems-issues/DRESETOctober26_photo11.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.519657242149, lng: -0.0617249754912 },
+  },
+  {
+    id: 12,
+    name: "12",
+    image: "/gems-issues/DRESETOctober26_photo12.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.520146816086, lng: -0.060519939288553 },
+  },
+  {
+    id: 13,
+    name: "13",
+    image: "/gems-issues/DRESETOctober26_photo13.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.520466156312, lng: -0.058824760523579 },
+  },
+  {
+    id: 14,
+    name: "14",
+    image: "/gems-issues/DRESETOctober26_photo14.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "none",
+    position: { lat: 51.519580498605, lng: -0.058650501393177 },
+  },
+  {
+    id: 15,
+    name: "15",
+    image: "/gems-issues/DRESETOctober26_photo15.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.521580624442, lng: -0.059176068753059 },
+  },
+  {
+    id: 16,
+    name: "16",
+    image: "/gems-issues/DRESETOctober26_photo16.jpg",
+    contexts: [
+        {
+          context:
+            ``,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.522747008178, lng: -0.05585356615489 },
+  },
+  {
+    id: 17,
+    name: "17",
+    image: "/gems-issues/DRESETOctober26_photo17.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.523398282054, lng: -0.056414818391256 },
+  },
+  {
+    id: 18,
+    name: "18",
+    image: "/gems-issues/DRESETOctober26_photo18.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.523880838886, lng: -0.056426907512006 },
+  },
+  {
+    id: 19,
+    name: "19",
+    image: "/gems-issues/DRESETOctober26_photo19.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.524054978585, lng: -0.056420174463851 },
+  },
+  {
+    id: 20,
+    name: "20",
+    image: "/gems-issues/DRESETOctober26_photo20.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.524519358323, lng: -0.056593063928742 },
+  },
+  {
+    id: 21,
+    name: "21",
+    image: "/gems-issues/DRESETOctober26_photo21.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.524556841675, lng: -0.057464645235506 },
+  },
+  {
+    id: 22,
+    name: "22",
+    image: "/gems-issues/DRESETOctober26_photo22.jpg",
+    contexts: [
+      {
+        context:
+          ``,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.526730297432, lng: -0.05644836416453 },
+  },
+];
+
+const DRESETDecember9_Markers = [
+  {
+    id: 1,
+    name: "1",
+    image: "/gems-issues/DRESETDecember9_photo1.jpg",
+    contexts: [
+        {
+          context:
+            `Female key worker: You can [hard to hear]... 
+
+            PF: We're about to turn left and take a photo of something a little but more important, this is just a test. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "none",
+    position: { lat: 51.514639067464, lng: -0.073580117896199 },
+  },
+  {
+    id: 2,
+    name: "2",
+    image: "/gems-issues/DRESETDecember9_photo2.jpg",
+    contexts: [
+        {
+          context:
+            `22 second audio
+            PF: Why did you take a photo of that [key worker]? 
+            
+            Key worker: This space is something that is, no no no no just cancel it. It's still going? [Tech difficulties].
+            
+            PF: Yeah [gestures to continue]. 
+            
+            Key worker: This space is a space where people do bed down but it's something that you would easily walk past. 
+            
+            5 second audio
+            
+            Key worker: It's just as you turn left onto Council Street`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.514305048622, lng: -0.073908269405365 },
+  },
+  {
+    id: 3,
+    name: "3",
+    image: "/gems-issues/DRESETDecember9_photo3.jpg",
+    contexts: [
+        {
+          context:
+            `first audio 
+
+            PF: We saw someone and [female key worker] had an outreach moment at the station.
+            
+            second audio 
+            
+            PF: We are taking the DLR, to... where are we going? `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.510635870509, lng: -0.073076784610748 },
+  },
+  {
+    id: 4,
+    name: "4",
+    image: "/gems-issues/DRESETDecember9_photo4.jpg",
+    contexts: [
+      {
+        context:
+          `Spoke with a client as he was on his way to see his Housing First Worker. He was unsure of how to get to Bow Church so we accompanied him on the  DLR and then gave him further directions to get to Bow Church. Client was also asking about how we choose locations for Outreach. 
+
+          [female key worker wrote in directly]`,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "none",
+    position: { lat: 51.507747634314, lng: -0.017358334735036 },
+  },
+  {
+    id: 5,
+    name: "5",
+    image: "/gems-issues/DRESETDecember9_photo5.jpg",
+    contexts: [
+        {
+          context:
+            `Area where you sometimes see Rough Sleepers
+
+            [typed in directly by female key worker]`,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "none",
+    position: { lat: 51.489913039841, lng: -0.013497713953257 },
+  },
+  {
+    id: 6,
+    name: "6",
+    image: "/gems-issues/DRESETDecember9_photo6.jpg",
+    contexts: [
+        {
+          context:
+            `PF: During lockdown, this is something that people used a bit more. This park, I thought, [PF] thought that this was a bit of a really upgraded, really posh park. But [key worker] also said the reason that they are thinking about including it in a new walking route is that it's far out there and there are estates out there in the area. Is that what you are thinking as to why this might be a good? 
+
+            Key worker: It was a very working class area. 
+            
+            PF: It was a very working class area. Hmm. 
+            
+            Key worker: You can see these [hard to hear] over there. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.489680944942, lng: -0.013249693438411 },
+  },
+  {
+    id: 7,
+    name: "7",
+    image: "/gems-issues/DRESETDecember9_photo7.jpg",
+    contexts: [
+        {
+          context:
+            `These routes are not new, they just don't get done which is why we are looking in this area in particular. `,
+          createdAt: Date.now().toString(),
+        },
+    ],
+    type: "gem",
+    position: { lat: 51.488081342541, lng: -0.010182335972786 },
+  },
+  {
+    id: 8,
+    name: "8",
+    image: "/gems-issues/DRESETDecember9_photo8.jpg",
+    contexts: [
+      {
+        context:
+          `18 second audio
+          PF: This is the edge of Tower Hamlets. 
+          
+          [Female key worker]: If you go by Victoria Park, you're literally on the line of one end of the park is Tower Hamlets and the other is Hackney. 
+          
+          PF: Right, and we are close to the Greenwich, Tower Hamlets border right now.
+          
+          5 second audio
+          PF: [Key worker] [beeping noise] pointed out the arches here, if we had more time we could go and look at it. `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.487811109982, lng: -0.010150736197829 },
+  },
+  {
+    id: 9,
+    name: "9",
+    image: "/gems-issues/DRESETDecember9_photo9.jpg",
+    contexts: [
+      {
+        context:
+          `Male key worker: So--
+
+          Female key worker: But we haven't got time for that now. 
+          
+          Male key worker: And then there's little mini estates. 
+          
+          Female key worker: Yeah, exactly. On Monday I think we [should] cover that cuz we'll have more time. 
+          
+          PF: If we had more time we'd do a lap and go further down. 
+          
+          Male key worker: Yeah, cuz this is where you've got the green here, if you walk further down towards Black Hall [missed this location], there's loads of random council estates, but no-one would ever go to. 
+          
+          Female key worker: Which is where you'd probably would be-.
+          
+          PF: OK sounds good. 
+          
+          Female key worker: Yeah, that side of Greenwich which is lovely. Um, which is southeast London. 
+          
+          Male key worker: Yeah so where that little bobble right there, that's where you get the foot tunnel from here to there. 
+           
+          PF: Oh OK! [Talks into app]. We are very close to the water right now but looking across south of the river.  `,
+        createdAt: Date.now().toString(),
+      },
+    ],
+    type: "gem",
+    position: { lat: 51.486642924137, lng: -0.0090959575027227 },
+  },
+];
+
 const DRESETJanuary29_Markers = [
   {
     id: 1,
@@ -2165,6 +2662,8 @@ const allMarkers = [
     ...tagWithSource("AB11", AB11_Markers),
     ...tagWithSource("CK09", CK09_Markers),
     ...tagWithSource("DM12", DM12_Markers),
+    ...tagWithSource("DRESET October 26 (Outreach Staff)", DRESETOctober26_Markers),
+    ...tagWithSource("DRESET December 9 (Outreach Staff)", DRESETDecember9_Markers),
     ...tagWithSource("DRESET January 29", DRESETJanuary29_Markers),
     ...tagWithSource("DRESET January 31", DRESETJanuary31_Markers),
     ...tagWithSource("DRESET February 9", DRESETFebruary9_Markers),
@@ -2192,9 +2691,11 @@ root.render(
         path="/MultipleMaps" 
           element={
               <MultipleMaps 
-                  key="DRESET_February9" 
-                  mapName="DRESET February 9 Walk" 
+                  key="DRESET" 
+                  mapName="DRESET Walks" 
                   isAllMarkers={false} 
+                  markersDRESETOctober26={DRESETOctober26_Markers}
+                  markersDRESETDecember9={DRESETDecember9_Markers}
                   markersDRESETJanuary29={DRESETJanuary29_Markers}
                   markersDRESETJanuary31={DRESETJanuary31_Markers}
                   markersDRESETFebruary9={DRESETFebruary9_Markers}

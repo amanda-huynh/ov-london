@@ -41,6 +41,8 @@ const GenericMap = ({ markers, mapName, isAllMarkers=false }) => {
     AB11: false,
     CK09: false,
     DM12: false,
+    "DRESET October 26 (Outreach Staff)": false,
+    "DRESET December 9 (Outreach Staff)": false,
     "DRESET January 29": false,
     "DRESET January 31": false,
     "DRESET February 9": false,

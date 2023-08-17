@@ -2,6 +2,8 @@ import React from 'react';
 import GenericMap from "./GenericMap.jsx";
 
 function MultipleMaps({ 
+    markersDRESETOctober26,
+    markersDRESETDecember9,
     markersDRESETJanuary29,
     markersDRESETJanuary31,
     markersDRESETFebruary9, 
@@ -13,6 +15,18 @@ function MultipleMaps({
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <GenericMap 
+            key="DRESET_October26" 
+            mapName="DRESET October 26 (Outreach Staff) Walk" 
+            isAllMarkers={false} 
+            markers={markersDRESETOctober26} 
+        />
+        <GenericMap 
+            key="DRESET_December9" 
+            mapName="DRESET December 9 (Outreach Staff) Walk" 
+            isAllMarkers={false} 
+            markers={markersDRESETDecember9} 
+        />
         <GenericMap 
             key="DRESET_January29" 
             mapName="DRESET January 29 Walk" 
