@@ -1,0 +1,64 @@
+Instructions on Adding a New Walk
+
+The files you need to modify:
+- the folder gem-issues
+- index.js located at /ov-london/src/index.js
+- Navbar.jsx located at /ov-london/src/components/Navbar.jsx
+- GenericMap.jsx located at /ov-london/src/components/GenericMap.jsx
+
+To do's in the folder gem-issues:
+1. drag in all the walk photos here
+
+To-do's in index.js located at /ov-london/src/index.js:
+1. Create a new constant. This is a template:
+    const AB11_Markers = [
+    {
+      id: 1,
+      name: "1",
+      image: "/gems-issues/<insert_walkname_here>_Photo1.jpeg",
+      contexts: [
+          {
+            context:
+              `<insert_walk_photo_comments>`,
+            createdAt: Date.now().toString(),
+          },
+      ],
+      type: "<insert 'concern, gem, none, or both' here>",
+      position: { lat: <insert_latitude_here>, lng: <insert_longitude_here> },
+    },
+    {
+      id: 2,
+      name: "2",
+      image: "/gems-issues/<insert_walkname_here>_Photo1.jpeg",
+      contexts: [
+          {
+            context:
+              `<insert_walk_photo_comments_here>`,
+            createdAt: Date.now().toString(),
+          },
+      ],
+      type: "<insert 'concern, gem, none, or both' here>",
+      position: { lat: <insert_latitude_here>, lng: <insert_longitude_here> },
+    },
+  ];
+
+2. Tag the source
+  const allMarkers = [
+      ...tagWithSource("<walkname>", <walkname>_Markers),
+
+3. Add the Route
+  <Route tabIndex="<insert_next_number_here>" path="/<walkname>_Walk" element={<GenericMap key="<walkname>" mapName="<walkname> Walk" isAllMarkers={false} markers={<walkname>_Markers} />} />
+
+To-do's in Navbar.jsx located at /ov-london/src/components/Navbar.jsx
+1. For every walk, add the navbar tab
+  <li tabIndex="<insert_next_number_here>">
+      <Link to='/<walkname>_Walk'><walkname> Walk</Link>
+  </li>
+
+To-do's in GenericMap.jsx located at /ov-london/src/components/GenericMap.jsx
+1. Add the walk to the filters on the All Walks Data page:
+  const initialFilters = {
+    <walkname>: false,  (use this format if it's a single word)
+    "<long_walkname>": false, (use this format if it is more than one word and you need spaces)
+  };
+
